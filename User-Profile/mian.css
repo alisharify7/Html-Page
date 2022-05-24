@@ -81,10 +81,31 @@ body{
     margin-bottom: 10px; 
 }
 .button{
-    width:30%;
+    width:150px;
     margin: 0 auto;
 }
 
 .button button:hover{
     background-color:#726a95;
+}
+
+
+/* responsive */
+
+@media (max-width: 600px)
+{    
+    .container{
+     width:95%;
+    }
+    .header img{
+        width:10em;
+    }
+    .img-media{
+        width:3.5em;
+        padding-left:10%;
+    }
+    .about-me{
+        margin-top:30px;
+    }
+
 }
