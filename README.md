@@ -1,12 +1,9 @@
 # Html-simple
-## implementation of Some Html Page's 
-
+## implementation of Some Html Page's
 
 ## Some Demo's:
-<br>
 
 ### <a href="./User-Profile" >User Profile</a>
-
 <img src="./User-Profile/img/profile.png" width="600px">
 
 ___
