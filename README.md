@@ -3,11 +3,11 @@
 
 ## Some Demo's:
 
-### <a href="./User-Profile" >User Profile</a>
+### <a href="./User-Profile" >User Profile </a> [Flex-Box]
 <img src="./User-Profile/img/profile.png" width="600px">
 
 ___
-### <a href="./Gym_page" >Gym Page</a>
+### <a href="./Gym_page" >Gym Page</a> [Float]
 <img src='./Gym_page/images/float.png' width="600px">
 
 
