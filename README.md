@@ -9,7 +9,7 @@
 
 <img src="./User-Profile/img/profile.png" width="600px">
 
-
+___
 <br>
 
 ### <a href="./Gym_page" >Gym Page</a>
