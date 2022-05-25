@@ -6,4 +6,4 @@ ___
 
 
 <img src="img/profile.png" width="100%">
-<img src="img/mobile-user.png" width="100%">
+<img src="img/mobile-user.png" width="50%">
