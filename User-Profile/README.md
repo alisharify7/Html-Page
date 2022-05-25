@@ -2,5 +2,5 @@
 
 ![Gif](https://github.com/alisharifyy/Html-Page/blob/main/User-Profile/img/user.gif)
 
-<img src="img/profile.png" width="100%">
+<img src="img/profile.png" width="50%">
 <img src="img/mobile-user.png"  width="50%">
