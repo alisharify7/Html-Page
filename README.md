@@ -4,7 +4,7 @@ How to clone:
 
         git clone https://github.com/alisharifyy/Html-Page.git
    
-### <a href="./User-Profile" >Login Profile </a> [Flex-Box]
+### <a href="./login-Profile" >Login Profile </a> [Flex-Box]
 <img src="./login-Profile/img/login.png" width="600px">   
 
 ___
