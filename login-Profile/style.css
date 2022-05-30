@@ -32,6 +32,8 @@ input[type="text"],input[type="password"]{
     opacity: 30%;
     margin-top: 15px;
     border-style: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 input[type="submit"]{
@@ -40,6 +42,8 @@ input[type="submit"]{
     border-radius: 15px;
     margin-top: 15px;
     border-style: none;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 input[type="checkbox"]{
