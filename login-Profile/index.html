@@ -4,56 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
+    <title>Profile Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="media">
-        <header>
-          <div class="header">
-            <h1>Have an account?</h1>
-          </div>
-        </header>
-        <main>
-          <div class="boxs">
+      <!-- header START -->
+      <header>
+        <div class="header">
+          <h1>Have an account?</h1>
+        </div>
+      </header>
+      <!-- header END -->
+
+      <!-- main START -->
+      <main>
+        <div class="media-body">
+          <div>
             <input type="text" placeholder="Username" />
+          </div>
+          <div>
             <input type="password" placeholder="Password" />
+          </div>
+          <div>
             <input type="submit" value="SING IN" />
           </div>
-          <div class="forgot">
-            <div class="checkbox">
-              <form>
-                <input id="for" type="checkbox" class="check" />
-              </form>
-              <label >Remmebr me</label>
+          <div class="footer-form">
+            <div>
+              <input id="checkbox" type="checkbox" />
+              <label for="checkbox"> Remember Me </label>
             </div>
             <div>
-              <h4>
-                <a href="#"> Forgot password </a>
-              </h4>
+              <h5>
+                <a href="#"> Forget Password? </a>
+              </h5>
             </div>
           </div>
-      </div>
-    </main>
-    <footer>
-    <div class="footer">
-            <h3>- Or Sing in With -</h3>
-            
-            <div class="sing-option">
-                
-                <div class="sing-button" >
-                    <button>Twitter</button>
-                </div>
-
-                <div class="sing-button" >
-                    <button>Instagram</button>
-                </div>
-                
-            </div>
-        
         </div>
-    </footer>
+      </main>
+      <!-- main END -->
+
+      <!-- footer START -->
+      <footer>
+        <h3>-- Or Login With --</h3>
+        <div class="footer">
+          <div>
+            <button class="button">Twitter</button>
+          </div>
+          <div>
+            <button class="button">Instagram</button>
+          </div>
+        </div>
+      </footer>
+      <!-- footer END -->
     </div>
   </body>
 </html>
