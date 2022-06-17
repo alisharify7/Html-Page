@@ -5,8 +5,8 @@ How to clone:
         git clone https://github.com/alisharifyy/Html-Page.git
    
    
-### <a href="./twitter-homePage" >Twitter Home Page </a> [Flex-Box]
-<img src="./twitter-homePage/img/twitter.png" width="600px">   
+### <a href="./Twitter-homePage" >Twitter Home Page </a> [Flex-Box]
+<img src="./Twitter-homePage/img/twitter.png" width="600px">   
 
 ___
    
