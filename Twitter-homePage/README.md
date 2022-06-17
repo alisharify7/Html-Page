@@ -5,7 +5,7 @@ using HTML & CSS
 
 Notice : for get icons you should get a Kit from Font-awesome and replace it in header to work correctly
 
-![Gif]('./img/gif.gif')
+![Gif]('https://github.com/alisharifyy/Html-Page/blob/main/Twitter-homePage/img/gif.gif')
 
 
 <img src="./img/twitter.png" >
