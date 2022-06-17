@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+}
+
+
+.left-side{
+    width: 60%;
+    height: 97vh;
+    color: white;
+    background-image: url('img/back-twitter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-side{
+    width: 40%;
+    height: 97vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding :3rem 2rem;
+}
+
+
+.header-log{
+    font-size: 3rem;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.header-title{
+    font-size: 4.2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.login-oprion > h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.singup-inside{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5rem;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-apple{
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.right-side img{
+    width: 1.4rem;
+    padding-right: 5px;
+
+}
+
+.line-2{
+    width: 40%;
+    height: .2px;
+    background-color: #686868;
+    padding: 0 15px;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem 0;
+}
+
+.or{
+    font-size: 1rem;
+}
+.rule{
+    font-size: 0.7rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: #686868;
+}
+
+
+.color-tw{
+    background-color: #1DA1F2;
+    color: white;
+
+}
+
+.tw-color{
+    color: #1DA1F2;
+}
+
+.singin{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-sing-in{
+    padding: 10px;
+    border-radius: 3rem;
+    background-color: black;
+    border: solid #686868 1px;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+.btn-sing-in a{
+    color: #1DA1F2;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+footer span{
+    padding: 0.3rem;
+    padding: 10px 10px;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #686868;
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: center;
+}
+.left-side2{
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+    background-image: url('back-twitter.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.btn-white-option:hover{
+    background-color:aliceblue;
+}
+
+.btn-blue-sing:hover{
+    background-color: #1b89ce;
+    
+}
+.btn-sing-bblue:hover{
+    background-color: rgba(29, 161, 242,0.1);
+}
+
+
+@media (max-width: 1000px){
+    .container{flex-direction: column;}
+        
+    .left-side2{
+        display: block;
+        height: 50vh;
+        margin: 0;
+    }
+    .right-side{
+        margin-left: 8rem;
+        margin: 0;
+        padding: 0;
+        height: 88vh;
+        margin-left: 20%;
+    }    
+    .left-side{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1000px){
+
+        
+    .left-side2{
+        display: none;
+    }
+
+    
+    
+
+}
