@@ -1,0 +1,117 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.pic-header{
+    border-radius: 300%;
+    width:200px;
+}
+
+.container{
+    width: 600px;
+    background-color:white;
+    border-radius:20px;
+    margin: 0 auto;
+}
+
+body{
+    background-color:rgb(210, 206, 206);
+}
+
+.header{
+    background-color:#27296d;
+    height:200px;
+    border-radius: 20px 20px 50% 50%;
+    text-align:center;
+    padding-top:10px;
+}
+
+.header h1{
+    margin-bottom: 0;
+    color:white;
+}
+
+.header img{
+    padding-top:20px;
+}
+
+.about-me{
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+    margin-top:100px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.media-body{
+    display: flex;
+    
+}
+
+.media-body h3{
+    padding-left: 15%;
+    font-size: 1.3em;
+}
+
+.img-media{
+    width:4em;
+    padding-left:10%;
+}
+
+.line_breaker {
+    width: 80%;
+    margin: 5px auto;
+}
+
+.button button{
+    width: 150px;
+    height:80px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius:15px;
+    background-color:#27296d;
+    /* margin-left: 35%; */
+    color:white;
+    margin-bottom: 10px; 
+}
+.button{
+    width:150px;
+    margin: 0 auto;
+}
+
+.button button:hover{
+    background-color:#726a95;
+}
+
+
+h3 a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* responsive */
+
+@media (max-width: 600px)
+{    
+    .container{
+     width:95%;
+    }
+    .header img{
+        width:10em;
+    }
+    .img-media{
+        width:3.5em;
+        padding-left:10%;
+    }
+    .about-me{
+        margin-top:30px;
+    }
+
+}
