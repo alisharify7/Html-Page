@@ -9,8 +9,8 @@ How to clone:
 ### <a href="./Login-pages" >Login Pages </a> 
 
 <div style="display:flex;">
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="350px">   
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="350px">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="50%">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="50%">   
 
 </div>
 
