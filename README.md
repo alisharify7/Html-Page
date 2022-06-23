@@ -19,7 +19,7 @@ How to clone:
 
 <div style="display:flex;">
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="45%">   
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="45%">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png") width="45%">   
 
 </div>
 
@@ -27,7 +27,9 @@ ___
    
 # User - Profiles
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/User-profiles" >Login Profile </a> 
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/User-Profile-1/img/demo.png" width="600px">   
+<div style="display:flex;">
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/02-User-Profile/Dark-Mode/img/demo.png" width="45%">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/02-User-Profile/light-Mode/img/demo.png") width="45%">     
 
 ___
 
