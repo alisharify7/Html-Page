@@ -8,9 +8,11 @@ How to clone:
 #if you want see some login pages click
 ### <a href="./Login-pages" >Login Pages </a> 
 
-<img style="float:left;" src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="300px">   
+<div style="display:flex;">
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="300px">   
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="300px">   
 
+</div>
 
 ___
    
