@@ -5,12 +5,17 @@ How to clone:
         git clone https://github.com/alisharifyy/Html-Page.git
    
    
+   
+## here is Some Demos - this repository
+   
+   
+   
 # Login - Pages
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Login-Pages" >Login Pages </a> 
 
 <div style="display:flex;">
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="50%">   
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="50%">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="45%">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-login-Profile/img/login.png?raw=true)" width="45%">   
 
 </div>
 
