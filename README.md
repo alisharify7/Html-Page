@@ -5,8 +5,8 @@ How to clone:
         git clone https://github.com/alisharifyy/Html-Page.git
    
    
-#if you want see some login pages click
-### <a href="./Login-pages" >Login Pages </a> 
+# Login - Pages
+### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Login-Pages" >Login Pages </a> 
 
 <div style="display:flex;">
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="50%">   
@@ -16,18 +16,18 @@ How to clone:
 
 ___
    
-### <a href="./login-Profile" >Login Profile </a> [Flex-Box]
-<img src="./login-Profile/img/login.png" width="600px">   
+# User - Profiles
+### <a href="https://github.com/alisharifyy/Html-Page/tree/main/User-profiles" >Login Profile </a> 
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/User-Profile-1/img/demo.png" width="600px">   
 
 ___
 
-### <a href="./User-Profile" >User Profile </a> [Flex-Box]
-<img src="./User-Profile/img/demo.png" width="600px">
+# index - pages
+### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Indexs-pages/01-Gym_page" >User Profile </a> [Flex-Box]
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Indexs-pages/01-Gym_page/images/float.png" width="600px">
 
 ___
 
-### <a href="./Gym_page" >Gym Page</a> [Float]
-<img src='./Gym_page/images/float.png' width="600px">
 
 
 
