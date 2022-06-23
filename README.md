@@ -18,7 +18,7 @@ How to clone:
 # Some Demo of Html Pages
    
    
-# Login - Pages
+## Login - Pages
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Login-Pages" >Login Pages </a> 
 
 <div style="display:flex;">
@@ -29,7 +29,7 @@ How to clone:
 
 ___
    
-# User - Profiles
+## User - Profiles
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/User-profiles" >Login Profile </a> 
 <div style="display:flex;">
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/02-User-Profile/Dark-Mode/img/demo.png" width="45%">   
@@ -37,7 +37,7 @@ ___
 
 ___
 
-# index - pages
+## index - pages
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Indexs-pages/01-Gym_page" >User Profile </a> [Flex-Box]
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Indexs-pages/01-Gym_page/images/float.png" width="600px">
 
