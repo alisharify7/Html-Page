@@ -1,0 +1,61 @@
+*{
+
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #28223f;
+    color: white;
+}
+
+.bg-costum{
+    background-color:#1a162c ;
+}
+
+img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.text-costum{
+    color: rgba(255,255,255,0.8);    
+}
+
+.title-header{
+    font-size:1.3rem;
+}
+
+.info-small{
+    font-size: 1rem;
+}
+
+.info-medium{
+    font-size: 0.8rem;
+}
+
+.footer{
+    background-color: #130e29;
+}
+
+.rounded-top-5{
+    border-radius: 20px 20px 0 0 ;
+}
+
+.rounded-buttom-5{
+    border-radius: 0 0  20px 20px;
+}
+
+.border-costum{
+    border: 1px solid rgba(255,255, 255, 0.7);
+    border-radius: 10px ;
+}
+
+.bg-costum-pro{
+    background-color: #fdba0b;    
+}
+
+
+@media (min-width:1340px){
+    .container,.footer{
+        width: 30% !important;
+    }
+}
