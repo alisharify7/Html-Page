@@ -30,7 +30,7 @@ How to clone:
 ___
    
 ## 02. User - Profiles
-### <a href="https://github.com/alisharifyy/Html-Page/tree/main/User-profiles" >Login Profile </a> 
+### <a href="https://github.com/alisharifyy/Html-Page/tree/main/User-profiles" >User Profile </a> 
 <div style="display:flex;">
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/02-User-Profile/Dark-Mode/img/demo.png" width="45%">   
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/User-profiles/02-User-Profile/light-Mode/img/demo.png") width="45%">     
@@ -39,7 +39,7 @@ ___
 ___
 
 ## 03. index - pages
-### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Indexs-pages/01-Gym_page" >User Profile </a> [Flex-Box]
+### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Indexs-pages/01-Gym_page" >Index-page </a> [Flex-Box]
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Indexs-pages/01-Gym_page/images/float.png" width="600px">
 
 ___
