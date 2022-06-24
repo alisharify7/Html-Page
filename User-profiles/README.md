@@ -16,6 +16,7 @@ ___
 
 ## For see Code <a href="./03-User-Profile">Click</a>
 
-<img src="./03-User-Profile/img/demo.png" width="80%">
+<img src="./03-User-Profile/img/demo.png" width="40%">
+<img src="./03-User-Profile/img/demoo.png" width="40%">
 
 
