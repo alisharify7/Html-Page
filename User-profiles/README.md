@@ -4,7 +4,7 @@
 
 ## For see Code <a href="./01-User-Profile">Click</a>
 
-<img src="./01-User-Profile/img/demo.png" width="60%">
+<img src="./01-User-Profile/img/demo.png" width="50%">
 
 ---
 ## For see Code <a href="./02-User-Profile">Click</a>
