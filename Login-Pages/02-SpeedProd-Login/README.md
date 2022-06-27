@@ -9,4 +9,4 @@ ___
 
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-SpeedProd-Login/img/demo.png" width="100%">   
 
-<img src="./img/login1.png" width="600px">   
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-SpeedProd-Login/img/demo-sm.png" width="100%">   
