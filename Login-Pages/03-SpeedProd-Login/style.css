@@ -1,0 +1,253 @@
+@import url('https://.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@200&family=Roboto:ital,wght@1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100vh;
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.left{
+    width: 25%;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.mx-auto{
+    margin: 35% auto 0 auto;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inside{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input[type="email"],input[type="password"],input[type="button"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+input[type="button"]{
+    background-color: #dd4a1f;
+    color: white;
+    font-size:1.5rem ;
+    border-style: none;
+    font-weight: bold;
+}
+.login{
+    margin: 5% 0;
+}
+
+.register{
+    color: #dd4a1f;
+}
+
+.accound_register{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.text-end{
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.up-fix{
+    margin-top: 1.5rem;
+}
+
+.remember_me{
+    margin: 1.5rem;
+    font-size: 0.9rem;
+    width:100%;
+    text-align: start;
+}
+
+.forgot-password {
+    margin: 5%;
+}
+.forgot-password a{
+    font-size: 1rem;
+    color: #dd4a1f ;
+}
+
+.footer{
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(59, 58, 58);   
+
+
+}
+
+.privacy{
+    margin: 5%;
+    font-size: 1rem;
+}
+
+.privacy a{
+    color: rgb(59, 58, 58);   
+}
+
+.center{
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stars{
+    width:20px;
+}
+
+.w-inside-center{
+    width: 10%;
+    height: 12%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.t-left-center{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    border-top: 1px solid #e1592f;
+    border-left: 1px solid #e1592f;
+}
+
+.t-right-center{
+    position: absolute;
+    top: 1%;
+    right: 0;
+    border-top: 1px solid #e1592f;
+    border-right: 1px solid #e1592f;
+}
+
+.b-left-center{
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    border-bottom: 1px solid #e1592f;
+    border-left: 1px solid #e1592f;
+}
+.b-right-center{
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    border-bottom: 1px solid #e1592f;
+    border-right: 1px solid #e1592f;
+}
+
+.logo{
+    width: 5rem;
+    right: 45%; 
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+.title{
+    text-align: center;
+    margin: 10% auto 0 auto;
+}
+.main-title{
+    text-align: center;
+    margin: 5% auto 0 auto;
+}
+.main-footer{
+    text-align: center;
+    margin: 1% auto 0 auto;
+    
+}
+.button{
+    margin: 5% auto 0 auto;
+    
+} 
+
+.button a{
+    text-align: center;
+    background-color: #dd4a1f;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:1245px) {
+    .right{
+        width:65%;
+    }
+    .left{
+        width:45%;
+    }
+    .center{
+        width: 50%;
+    }
+}
+
+@media (max-width:937px) {
+    .right{
+        width:65%;
+    }
+    .left{
+        width:45%;
+    }
+    .center{
+        width: 65%;
+    }
+}
+@media (max-width:607px) {
+    .right{
+        width:50%;
+    }
+    .left{
+        width:50%;
+    }
+    .center{
+        width: 80%;
+    }
+
+    .mx-auto{
+        width: 200px !important;
+    }
+}
