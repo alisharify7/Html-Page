@@ -1,7 +1,7 @@
-   
-# SpeedProd Login Profile  [Flex-Box]
+# implementation of SpeedProd Login Profile  [Flex-Box]
 ## a responsive log in Page
 
+using HTML & CSS
 
 ![Gif](https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/02-SpeedProd-Login/img/demo.gif)
 

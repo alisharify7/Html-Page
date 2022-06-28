@@ -169,7 +169,7 @@ footer{
     color: white;
     margin-top: 5rem;
     text-align: center;
-    background-image: url('back-twitter.png');
+    background-image: url('./img/back-twitter.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-size: 18rem;
@@ -213,15 +213,9 @@ footer{
     }
     
 }
-
 @media (min-width: 1000px){
 
-        
     .left-side2{
         display: none;
     }
-
-    
-    
-
 }
