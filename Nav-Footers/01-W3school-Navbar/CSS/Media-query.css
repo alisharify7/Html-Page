@@ -1,0 +1,107 @@
+@media (max-width:1550px){
+    .react{
+        display: none;
+    }
+    .nav-bar{
+        font-size:16px ;
+    }
+    
+}
+
+@media (max-width:1475px){
+    .r{
+        display: none;
+    }
+    
+}
+
+@media (max-width:1430px){
+    .csh{
+        display: none;
+    }
+    
+}
+
+@media (max-width:1390px){
+    .cpp{
+        display: none;
+    }
+}
+
+@media (max-width:1330px){
+    .c{
+        display: none;
+    }
+}
+
+@media (max-width:1250px){
+    .jquery{
+        display: none;
+    }
+}
+
+@media (max-width:1151px){
+    .java{
+        display: none;
+    }
+}
+
+@media (max-width:1100px){
+    .w3-css{
+        display: none;
+    }
+}
+
+@media (max-width:995px){
+    .how-to{
+        display: none;
+    }
+}
+
+@media (max-width:930px){
+    .bootstrap{
+        display: none;
+    }
+}
+
+@media (max-width:930px){
+    .bootstrap{
+        display: none;
+    }
+}
+
+@media (max-width:810px){
+    .php{
+        display: none;
+    }
+}
+
+@media (max-width:770px){
+    .python{
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+    .sql{
+        display: none;
+    }
+}
+
+@media (max-width:560px){
+    .javascript{
+        display: none;
+    }
+}
+
+@media (max-width:480px){
+    .css{
+        display: none;
+    }
+}
+
+@media (max-width:370px){
+    .html{
+        display: none;
+    }
+}

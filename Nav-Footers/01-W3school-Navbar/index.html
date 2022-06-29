@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- icon only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/9acc533df2.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/Media-query.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-items">
+          <a href="" class="responsive-menu"><i class="bi bi-list"></i></a>
+          <a class="nav-icon" href=""><i class="bi bi-house-fill"></i></a>
+          <a class="nav-icon html" href="">HTML</a>
+          <a class="nav-icon css" href="">CSS</a>
+          <a class="nav-icon javascript" href="">JAVASCRIPT</a>
+          <a class="nav-icon sql" href="">SQL</a>
+          <a class="nav-icon python" href="">PYTHON</a>
+          <a class="nav-icon php" href="">PHP</a>
+          <a class="nav-icon bootstrap" href="">BOOTSTRAP</a>
+          <a class="nav-icon how-to" href="">HOW TO</a>
+          <a class="nav-icon w3-css" href="">W3.CSS</a>
+          <a class="nav-icon java" href="">JAVA</a>
+          <a class="nav-icon jquery" href="">JQUERY</a>
+          <a class="nav-icon c" href="">C</a>
+          <a class="nav-icon cpp" href="">C++</a>
+          <a class="nav-icon csh" href="">C#</a>
+          <a class="nav-icon r" href="">R</a>
+          <a class="nav-icon react" href="">React</a>
+          <a class="nav-icon dark-mode" href="">
+            <i class="bi bi-circle-half"></i>
+            <div class="dark-mode-option">
+              <form action="">
+                <label for="darkmode-in">
+                  <input type="checkbox" name="" id="darkmode-in" />
+                  Dark Mode
+                </label>
+                <br />
+                <label for="light">
+                  <input type="checkbox" name="" id="light" />
+                  Light Mode
+                </label>
+              </form>
+            </div>
+          </a>
+          <a class="nav-icon" href=""><i class="fa-solid fa-earth-asia"></i></a>
+          <a class="nav-icon search-nav" href=""
+            ><i class="bi bi-search"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var body = document.querySelector("body");
+      var LightMode = document.querySelector("#light");
+      var DarkMode = document.querySelector("#darkmode-in");
+
+      LightMode.addEventListener("click", function () {
+        body.style.backgroundColor = "#eee";
+      });
+
+      DarkMode.addEventListener("click", function () {
+        if (body.style.backgroundColor == "black") {
+          body.style.backgroundColor = "white";
+        } else {
+          body.style.backgroundColor = "black";
+        }
+      });
+    </script>
+  </body>
+</html>

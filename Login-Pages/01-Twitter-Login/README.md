@@ -3,7 +3,8 @@
 using HTML & CSS
 ---
 
-Notice : for get icons you should get a Kit from Font-awesome and replace it in header to work correctly
+### {{Attention: This project Need Font-awesome Kit to load icons}}
+
 
 ![Gif](./img/gif.gif)
 
