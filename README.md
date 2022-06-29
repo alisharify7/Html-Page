@@ -51,9 +51,9 @@ ___
 
 # 0.4 For see Some Nav bars and footers 
 ### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Nav-Footers" >Index-page </a>
-        <img src="https://github.com/alisharifyy/Html-Page/blob/main/Nav-Footers/01-W3school-Navbar/Img/localnavbar.png" 
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Nav-Footers/01-W3school-Navbar/Img/localnavbar.png" 
         width="100%">
-        <img src="https://github.com/alisharifyy/Html-Page/blob/main/Nav-Footers/01-W3school-Navbar/Img/w3navbar.png" 
+<img src="https://github.com/alisharifyy/Html-Page/blob/main/Nav-Footers/01-W3school-Navbar/Img/w3navbar.png" 
         width="100%">
 
 ___
