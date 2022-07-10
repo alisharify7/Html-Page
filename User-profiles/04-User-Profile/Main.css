@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600&family=Roboto:ital,wght@0,400;1,900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Raleway', sans-serif;
+    --font3: 'Roboto', sans-serif;
+    --fs-title: 2rem;
+    --fs-icon:1.2rem;
+    --color-primary: #11a0d9;
+    --color-primary-lighter: #00b7ff;
+    --color-white: #e8e6e3;
+    --color-black: #040b13;
+    --color-dark: #1a1d27;
+    --color-gray: #31333d;
+    --color-gray-text: #b3b3b3;
+}
+

@@ -1,0 +1,187 @@
+@import url('../Main.css');
+
+img{
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color:var(--color-gray);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-family: var(--font2);
+    background-color: var(--color-dark);
+}
+
+.aside-menu{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    transition: left 1s;
+
+}
+
+.right-backdrop{
+    position: fixed;
+    z-index: 5;
+    width: 80%;
+    height: 100%;
+    background: url('../img/hero-bg.jpg') center no-repeat;
+    background-size: cover;
+    right: 0;
+    top: 0;
+
+}
+
+.background-drop{
+    background-color: rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-text{
+    text-align: center;
+    font-size: var(--fs-title);
+}
+
+.developer{
+    text-decoration: underline var(--color-primary);
+}
+
+.header-menu{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-social-icons{
+    font-size: var(--fs-icon);
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-social-icons a{
+    padding: 10px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.header-social-icons a:hover{
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+
+.menu-item-linker:hover > i{
+    color: var(--color-primary);
+}
+
+.menu-item-linker:hover >  span{
+    color: white;
+}
+
+.main-menu-item{
+    margin: 3rem 1rem 1rem 1.5rem;
+    font-size: 1.3rem;
+    color: var(--color-gray-text);
+}
+
+.menu-item-linker span{
+    margin-left: 0.2rem;
+}
+
+.footer-menu{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+
+.footer-menu span{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: var(--font3);
+}
+
+
+/* Burger Menu */
+.menu-burger{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none ;    
+}
+.menu-burger i{
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 10;
+    padding: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+
+}
+
+.Menu-Display{
+    left: 0 !important;    
+}
+
+/* Media Query */
+
+@media (max-width:1013px)
+     {
+    .aside-menu{
+        width:30%;
+    }
+    .right-backdrop{
+        width: 70%;
+    }
+}
+
+@media (max-width:783px)
+{
+    .aside-menu{
+         left: -250px;
+    }
+    .right-backdrop{
+        width: 100%;
+        transition:  0.5s;
+    }
+    .menu-burger{
+        display: block;
+    }
+
+}
+
+@media (min-width:783px)
+{
+    .aside-menu{
+        transition: left 1s;
+        left: 250px;
+        
+    }
+}
