@@ -1,0 +1,22 @@
+.icon-upper-header{
+    width:5rem;
+}
+
+a{
+    text-decoration:none !important;
+}
+
+.cs-img-w{
+    width: 4rem;
+}
+.icons{
+    color:black !important;
+}
+.h-cs-p{
+    height:100vh !important;
+}
+
+.fs-cs-p{
+    font-size:0.9rem;
+    font-weight: bold;
+}
