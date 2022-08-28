@@ -1,4 +1,5 @@
 # implementation of Some Html Page's
+## All sample pages that are available in this repository are inspired and made from popular sites
 
 How to clone:
 
