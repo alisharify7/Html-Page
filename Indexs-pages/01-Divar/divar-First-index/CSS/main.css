@@ -4,7 +4,7 @@
     src: url('../fonts/sans1.ttf');
 }
 
-html{
-        font-family:sans !important;
-        font-family: arial,sans-serif;
+:root{
+        font-weight: bold;
+        --bs-font-sans-serif :sans !important;
 }
