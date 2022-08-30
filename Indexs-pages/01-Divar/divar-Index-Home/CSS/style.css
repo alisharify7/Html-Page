@@ -1,0 +1,13 @@
+.navbar-main{
+    background-color: red;
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-account{
+    margin-right:auto; 
+}
+
+.navbar-main{
+    background-color:green;
+}
