@@ -20,7 +20,7 @@ How to clone:
    
    
 ## 01. Login - Pages
-### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Login-Pages" >Login Pages </a> 
+### <a href="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/01-Divar/divar-First-index/image/index.png" >Login Pages </a> 
 
 <div style="display:flex;">
 <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/01-Twitter-Login/img/twitter.png" width="100%">   
