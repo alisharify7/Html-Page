@@ -4,11 +4,13 @@
     flex-direction: row-reverse;
 }
 
-.navbar-account{
-    margin-right:auto; 
+.navbar-main-items{
+    padding: 1rem ;
+    margin: 0 0.2rem;
+    background-color:green;
 }
 
-.navbar-main-items{
-    padding: 1rem;
-    background-color:green;
+
+.navbar-account{
+    margin-right:auto ; 
 }
