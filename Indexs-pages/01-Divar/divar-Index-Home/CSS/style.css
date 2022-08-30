@@ -8,6 +8,7 @@
     margin-right:auto; 
 }
 
-.navbar-main{
+.navbar-main-items{
+    padding: 1rem;
     background-color:green;
 }
