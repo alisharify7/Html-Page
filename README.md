@@ -44,8 +44,7 @@ ___
 ___
 
 ## 03. index - pages
-### <a href="https://github.com/alisharifyy/Html-Page/tree/main/Indexs-pages/01-Gym_page" >Index-page </a> [Float]
-<img src="https://github.com/alisharifyy/Html-Page/blob/main/Indexs-pages/01-Gym_page/images/float.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/01-Divar/divar-First-index/image/index.png" width="600px">
 
 ___
 
