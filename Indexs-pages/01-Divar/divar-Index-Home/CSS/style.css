@@ -1,16 +1,21 @@
-.navbar-main{
-    background-color: red;
-    display:flex;
-    flex-direction: row-reverse;
+body{
+    font-family: sans !important;
+}
+.navbar{
+    font-family: sans !important;
+    font-size: 1rem;
 }
 
-.navbar-main-items{
-    padding: 1rem ;
-    margin: 0 0.2rem;
-    background-color:green;
+.fs-10{
+    font-size:0.8rem;
 }
+.add-register-btn-header{
+    background-color: var(--brand-color);
+    
+}
+.add-register-btn-header:hover{
+    
+    background-color: var(--brand-color-hover);
+    transition: all 1s;
 
-
-.navbar-account{
-    margin-right:auto ; 
 }

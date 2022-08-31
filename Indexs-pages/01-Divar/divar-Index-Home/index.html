@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <script src="https://kit.fontawesome.com/9acc533df2.js" crossorigin="anonymous"></script>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9acc533df2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- icon -->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <!-- custom css -->
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./Main.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/bootstrap-grid.rtl.min.css" />
     <!-- <link rel="stylesheet" href="./CSS/bootstrap.rtl.min.css" /> -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>صفحه اصلی دیوار</title>
-</head>
-<body>
-<!-- 
-  <i class="bi bi-chat"></i>
+    <link rel="stylesheet" href="./CSS/bootstrap.rtl.min.css" />
+  </head>
+  <body>
+    <!-- <i class="bi bi-chat"></i>
   <i class="bi bi-house-door"></i>
   <i class="fa-solid fa-laptop"></i>
   <i class="fa-solid fa-user-plus"></i>
@@ -28,69 +31,127 @@
   <i class="bi bi-smartwatch"></i>
   <i class="bi bi-mic"></i>
   <i class="bi bi-headset"></i>
-  <i class="bi bi-geo-alt"></i>  -->
+  <i class="bi bi-geo-alt"></i>  
+  <i class="bi bi-search"></i> -->
+
+    <!-- start navbar -->
+    <div class="container-fluid shadow-sm fixed-top bg-white pb-sm-3 pb-lg-0">
+      <nav class="mx-5 navbar text-center navbar-expand-lg flex-row-reverse">
+        <!-- brand logo -->
+        <a href="" class="d-none d-lg-block navbar-brand ps-5 pe-3 border-end">
+          <img
+            style="width: 50px"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjM4NTUzIDE0LjYxNzNIOC4yODA0M0M3Ljg5NTA2IDE0LjU2NDcgNy42MzIzMiAxNC4xOTY5IDcuNjg0ODcgMTMuODExNUM4LjE1NzgxIDEwLjY5MzYgOC4zMTU0NiA1LjcxODg3IDguMzE1NDYgNS42ODM4NEM4LjM1MDQ5IDUuMjk4NDggOC42NDgyNyA0Ljk4MzE4IDkuMDUxMTUgNS4wMDA3QzkuNDM2NTIgNS4wMTgyMSA5LjczNDMgNS4zMzM1MSA5LjczNDMgNS43MTg4N0M5LjczNDMgNS45MjkwNyA5LjU1OTEzIDEwLjgxNjIgOS4wODYxOSAxNC4wMjE3QzkuMDMzNjQgMTQuMzcyIDguNzM1ODYgMTQuNjE3MyA4LjM4NTUzIDE0LjYxNzNaTTE4LjQyMjUgMTUuOTEzNUMxOC4xMjQ3IDE1LjkxMzUgMTcuODQ0NCAxNS43MjA4IDE3Ljc1NjkgMTUuNDIzQzE3LjYzNDIgMTUuMDU1MiAxNy44NDQ0IDE0LjY1MjMgMTguMjEyMyAxNC41NDcyQzIxLjUyMjkgMTMuNDk2MiAyMS41NzU0IDEyLjY5MDQgMjEuNTkzIDEyLjI1MjVDMjEuNjI4IDExLjU2OTQgMjEuMTAyNSAxMC42OTM2IDIwLjg5MjMgMTAuMzk1OEMyMC42NjQ2IDEwLjA4MDUgMjAuNzM0NyA5LjY0MjU3IDIxLjA1IDkuNDE0ODVDMjEuMzY1MiA5LjE4NzE0IDIxLjgwMzIgOS4yNTcyIDIyLjAzMDkgOS41NzI1QzIyLjEzNiA5LjcxMjYzIDIzLjA4MTkgMTEuMDI2NCAyMi45OTQzIDEyLjM0MDFDMjIuOTA2NyAxMy45MzQxIDIxLjY4MDUgMTQuOTE1IDE4LjYzMjcgMTUuODk2QzE4LjU5NzYgMTUuODk2IDE4LjU2MjYgMTUuOTAwMyAxOC41Mjc2IDE1LjkwNDdDMTguNDkyNSAxNS45MDkxIDE4LjQ1NzUgMTUuOTEzNSAxOC40MjI1IDE1LjkxMzVaTTguOTExMDIgMTguMzgzM0M4LjcwMDgyIDE4LjM4MzMgOC40OTA2MyAxOC4yOTU3IDguMzY4MDEgMTguMTIwNkM4LjEyMjc4IDE3LjgyMjggOC4xNzUzMyAxNy4zNjczIDguNDkwNjMgMTcuMTM5NkM5LjkyNjk4IDE2LjAwMTEgMTAuODkwNCAxNC45ODUxIDExLjUyMSAxNC4wOTE4QzExLjE3MDYgMTMuOTE2NiAxMC44MDI4IDEzLjY1MzggMTAuNjEwMSAxMy4yMTU5QzEwLjQzNSAxMi44MTMxIDEwLjMyOTkgMTIuMTQ3NCAxMC45NDI5IDExLjI1NDFDMTEuODE4OCA5Ljk1Nzg2IDEyLjY5NDYgOS42NjAwOCAxMy4wMjc0IDkuNTkwMDJDMTMuNDgyOCA5LjUwMjQ0IDEzLjkyMDcgOS43NjUxOCAxNC4wNDM0IDEwLjIwMzFDMTQuMTMwOSAxMC41MTg0IDE0LjM0MTEgMTEuNTE2OCAxMy43MTA1IDEzLjA0MDhDMTQuNTUxMyAxMy4wMjMzIDE1LjIxNyAxMi43OTU1IDE1LjcyNDkgMTIuMzc1MUMxNi43MDU5IDExLjU4NjkgMTYuNzU4NCAxMC4yNTU2IDE2Ljc1ODQgMTAuMjM4MUMxNi43NzU5IDkuODUyNzcgMTcuMDkxMiA5LjU1NDk4IDE3LjQ3NjYgOS41NTQ5OEMxNy44NjE5IDkuNTcyNSAxOC4xNTk3IDkuODg3OCAxOC4xNTk3IDEwLjI3MzJDMTguMTU5NyAxMC4zNDMyIDE4LjA4OTcgMTIuMjE3NSAxNi42MzU4IDEzLjQ0MzZDMTUuNzI0OSAxNC4yMTQ0IDE0LjQ4MTMgMTQuNTQ3MiAxMi45NzQ4IDE0LjQyNDZDMTIuMjU2NyAxNS41MjgxIDExLjExODEgMTYuODI0MyA5LjM0ODkzIDE4LjIyNTZDOS4yMDg4IDE4LjMzMDcgOS4wNjg2NyAxOC4zODMzIDguOTExMDIgMTguMzgzM1pNMTIuNzEyMSAxMS4zMDY2QzEyLjUxOTQgMTEuNDY0MyAxMi4zMDkyIDExLjY5MiAxMi4wODE1IDEyLjA0MjNDMTEuODUzOCAxMi4zOTI3IDExLjgzNjMgMTIuNTg1MyAxMS44NTM4IDEyLjYzNzlDMTEuODg4OCAxMi43MjU1IDEyLjA2NCAxMi44MTMxIDEyLjIzOTIgMTIuODgzMUMxMi41NzIgMTIuMjE3NSAxMi42NzcxIDExLjY5MiAxMi43MTIxIDExLjMwNjZaTTEyLjg4NzMgMTYuMjI4OEMxMi45MDQ4IDE2LjYxNDEgMTMuMjIwMSAxNi45MTE5IDEzLjU4NzkgMTYuOTExOUgxMy42MjNDMTMuNjc1NSAxNi45MTE5IDE0Ljg0OTEgMTYuODc2OSAxNi41MzA3IDE2LjQ5MTVDMTYuOTE2MSAxNi40MDM5IDE3LjE2MTMgMTYuMDM2MSAxNy4wNzM3IDE1LjY1MDdDMTYuOTg2MSAxNS4yNjU0IDE2LjYxODMgMTUuMDIwMSAxNi4yMzI5IDE1LjEwNzdDMTQuNjczOSAxNS40NDA1IDEzLjU3MDQgMTUuNDkzMSAxMy41NTI5IDE1LjQ5MzFDMTMuMTY3NSAxNS41MTA2IDEyLjg2OTcgMTUuODQzNCAxMi44ODczIDE2LjIyODhaTTEuMTMzNyAxOC4xMDNDMS4yNTYzMSAxOC4yNzgyIDEuNDg0MDMgMTguMzgzMyAxLjY5NDIzIDE4LjM4MzNDMS44MzQzNiAxOC4zODMzIDEuOTc0NDkgMTguMzQ4MyAyLjExNDYyIDE4LjI2MDdDNi41NjM4MSAxNS4wMjAxIDYuNzM4OTggMTAuNzgxMSA2LjczODk4IDEwLjYwNkM2LjczODk4IDEwLjIyMDYgNi40NDEyIDkuOTA1MzEgNi4wNTU4MyA5Ljg4NzhDNS42NzA0NyA5Ljg3MDI4IDUuMzU1MTcgMTAuMTg1NiA1LjMzNzY2IDEwLjU3MDlDNS4zMzc2NiAxMC43MTExIDUuMTYyNDkgMTQuMzAyIDEuMjkxMzUgMTcuMTIyMUMwLjk3NjA0OSAxNy4zNDk4IDAuOTA1OTgzIDE3Ljc4NzcgMS4xMzM3IDE4LjEwM1oiIGZpbGw9IiNBNjI2MjYiLz4KPC9zdmc+Cg=="
+            alt="divar logo"
+          />
+        </a>
+
+        <div class="navbar-collapse collapse " id="mynavbar">
+          <ul class="navbar-nav flex-row-reverse w-100">
+            <li class="rounded nav-item mx-2">
+              <a href="" class="nav-link text-muted">
+                <span>کرج</span>
+                <i class="bi bi-geo-alt"></i>
+              </a>
+            </li>
+            <!-- drop down menu -->
+            <li class="rounded nav-item mx-2 dropdown">
+              <a
+                href=""
+                data-bs-toggle="dropdown"
+                class="text-muted nav-link dropdown-toggle"
+              >
+                دسته ها
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>موتور</li>
+                  <li>ماشین</li>
+                  <li>الکترونیک</li>
+                  <li>لوازم خودرو</li>
+                  <li>سایر</li>
+                </ul>
+              </div>
+            </li>
+            <!-- drop down menu -->
+  
+            <!-- form search  -->
+            <form action="" class="bg form-inline mx-2">
+              <div class="input-group border rounded">
+                <input
+                  aria-describedby="basic-addon1"
+                  placeholder="جستجو در آگهی ها"
+                  class="form-control border"
+                  name=""
+                  type="text"
+                  id=""
+                />
+                <i
+                  class="text-muted bi bi-search input-group-text bg-white border-0"
+                  id="basic-addon1"
+                ></i>
+              </div>
+            </form>
+            <!-- form search  -->
+  
+            <li class="rounded nav-item ms-auto">
+              <div
+                class="container d-flex justify-content-center align-items-center hover"
+              >
+                <a href="" class="nav-link text-muted">
+                  <span>دیوار من</span>
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </div>
+            </li>
+            <li class="rounded nav-item mx-2">
+              <div
+                class="container d-flex justify-content-center align-items-center hover"
+              >
+                <a href="" class="nav-link text-muted">
+                  <span>چت</span>
+                  <i class="bi bi-chat mb-3"></i>
+                </a>
+              </div>
+            </li>
+            <li class="rounded nav-item mx-2">
+              <a href="" class="nav-link text-muted">
+                <span>پشتیبانی</span>
+              </a>
+              <li class="rounded nav-item mx-2">
+            </li>
+              <a
+                href=""
+                class="nav-link text-white border add-register-btn-header rounded"
+              >
+                ثبت آگهی
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+      </nav>
 
 
-<div class="container-fluid">
-
-
-  <!-- navbar start -->
-  <div class="navbar-main">
-    
-    <div class="navbar-main-items logo-brand">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjM4NTUzIDE0LjYxNzNIOC4yODA0M0M3Ljg5NTA2IDE0LjU2NDcgNy42MzIzMiAxNC4xOTY5IDcuNjg0ODcgMTMuODExNUM4LjE1NzgxIDEwLjY5MzYgOC4zMTU0NiA1LjcxODg3IDguMzE1NDYgNS42ODM4NEM4LjM1MDQ5IDUuMjk4NDggOC42NDgyNyA0Ljk4MzE4IDkuMDUxMTUgNS4wMDA3QzkuNDM2NTIgNS4wMTgyMSA5LjczNDMgNS4zMzM1MSA5LjczNDMgNS43MTg4N0M5LjczNDMgNS45MjkwNyA5LjU1OTEzIDEwLjgxNjIgOS4wODYxOSAxNC4wMjE3QzkuMDMzNjQgMTQuMzcyIDguNzM1ODYgMTQuNjE3MyA4LjM4NTUzIDE0LjYxNzNaTTE4LjQyMjUgMTUuOTEzNUMxOC4xMjQ3IDE1LjkxMzUgMTcuODQ0NCAxNS43MjA4IDE3Ljc1NjkgMTUuNDIzQzE3LjYzNDIgMTUuMDU1MiAxNy44NDQ0IDE0LjY1MjMgMTguMjEyMyAxNC41NDcyQzIxLjUyMjkgMTMuNDk2MiAyMS41NzU0IDEyLjY5MDQgMjEuNTkzIDEyLjI1MjVDMjEuNjI4IDExLjU2OTQgMjEuMTAyNSAxMC42OTM2IDIwLjg5MjMgMTAuMzk1OEMyMC42NjQ2IDEwLjA4MDUgMjAuNzM0NyA5LjY0MjU3IDIxLjA1IDkuNDE0ODVDMjEuMzY1MiA5LjE4NzE0IDIxLjgwMzIgOS4yNTcyIDIyLjAzMDkgOS41NzI1QzIyLjEzNiA5LjcxMjYzIDIzLjA4MTkgMTEuMDI2NCAyMi45OTQzIDEyLjM0MDFDMjIuOTA2NyAxMy45MzQxIDIxLjY4MDUgMTQuOTE1IDE4LjYzMjcgMTUuODk2QzE4LjU5NzYgMTUuODk2IDE4LjU2MjYgMTUuOTAwMyAxOC41Mjc2IDE1LjkwNDdDMTguNDkyNSAxNS45MDkxIDE4LjQ1NzUgMTUuOTEzNSAxOC40MjI1IDE1LjkxMzVaTTguOTExMDIgMTguMzgzM0M4LjcwMDgyIDE4LjM4MzMgOC40OTA2MyAxOC4yOTU3IDguMzY4MDEgMTguMTIwNkM4LjEyMjc4IDE3LjgyMjggOC4xNzUzMyAxNy4zNjczIDguNDkwNjMgMTcuMTM5NkM5LjkyNjk4IDE2LjAwMTEgMTAuODkwNCAxNC45ODUxIDExLjUyMSAxNC4wOTE4QzExLjE3MDYgMTMuOTE2NiAxMC44MDI4IDEzLjY1MzggMTAuNjEwMSAxMy4yMTU5QzEwLjQzNSAxMi44MTMxIDEwLjMyOTkgMTIuMTQ3NCAxMC45NDI5IDExLjI1NDFDMTEuODE4OCA5Ljk1Nzg2IDEyLjY5NDYgOS42NjAwOCAxMy4wMjc0IDkuNTkwMDJDMTMuNDgyOCA5LjUwMjQ0IDEzLjkyMDcgOS43NjUxOCAxNC4wNDM0IDEwLjIwMzFDMTQuMTMwOSAxMC41MTg0IDE0LjM0MTEgMTEuNTE2OCAxMy43MTA1IDEzLjA0MDhDMTQuNTUxMyAxMy4wMjMzIDE1LjIxNyAxMi43OTU1IDE1LjcyNDkgMTIuMzc1MUMxNi43MDU5IDExLjU4NjkgMTYuNzU4NCAxMC4yNTU2IDE2Ljc1ODQgMTAuMjM4MUMxNi43NzU5IDkuODUyNzcgMTcuMDkxMiA5LjU1NDk4IDE3LjQ3NjYgOS41NTQ5OEMxNy44NjE5IDkuNTcyNSAxOC4xNTk3IDkuODg3OCAxOC4xNTk3IDEwLjI3MzJDMTguMTU5NyAxMC4zNDMyIDE4LjA4OTcgMTIuMjE3NSAxNi42MzU4IDEzLjQ0MzZDMTUuNzI0OSAxNC4yMTQ0IDE0LjQ4MTMgMTQuNTQ3MiAxMi45NzQ4IDE0LjQyNDZDMTIuMjU2NyAxNS41MjgxIDExLjExODEgMTYuODI0MyA5LjM0ODkzIDE4LjIyNTZDOS4yMDg4IDE4LjMzMDcgOS4wNjg2NyAxOC4zODMzIDguOTExMDIgMTguMzgzM1pNMTIuNzEyMSAxMS4zMDY2QzEyLjUxOTQgMTEuNDY0MyAxMi4zMDkyIDExLjY5MiAxMi4wODE1IDEyLjA0MjNDMTEuODUzOCAxMi4zOTI3IDExLjgzNjMgMTIuNTg1MyAxMS44NTM4IDEyLjYzNzlDMTEuODg4OCAxMi43MjU1IDEyLjA2NCAxMi44MTMxIDEyLjIzOTIgMTIuODgzMUMxMi41NzIgMTIuMjE3NSAxMi42NzcxIDExLjY5MiAxMi43MTIxIDExLjMwNjZaTTEyLjg4NzMgMTYuMjI4OEMxMi45MDQ4IDE2LjYxNDEgMTMuMjIwMSAxNi45MTE5IDEzLjU4NzkgMTYuOTExOUgxMy42MjNDMTMuNjc1NSAxNi45MTE5IDE0Ljg0OTEgMTYuODc2OSAxNi41MzA3IDE2LjQ5MTVDMTYuOTE2MSAxNi40MDM5IDE3LjE2MTMgMTYuMDM2MSAxNy4wNzM3IDE1LjY1MDdDMTYuOTg2MSAxNS4yNjU0IDE2LjYxODMgMTUuMDIwMSAxNi4yMzI5IDE1LjEwNzdDMTQuNjczOSAxNS40NDA1IDEzLjU3MDQgMTUuNDkzMSAxMy41NTI5IDE1LjQ5MzFDMTMuMTY3NSAxNS41MTA2IDEyLjg2OTcgMTUuODQzNCAxMi44ODczIDE2LjIyODhaTTEuMTMzNyAxOC4xMDNDMS4yNTYzMSAxOC4yNzgyIDEuNDg0MDMgMTguMzgzMyAxLjY5NDIzIDE4LjM4MzNDMS44MzQzNiAxOC4zODMzIDEuOTc0NDkgMTguMzQ4MyAyLjExNDYyIDE4LjI2MDdDNi41NjM4MSAxNS4wMjAxIDYuNzM4OTggMTAuNzgxMSA2LjczODk4IDEwLjYwNkM2LjczODk4IDEwLjIyMDYgNi40NDEyIDkuOTA1MzEgNi4wNTU4MyA5Ljg4NzhDNS42NzA0NyA5Ljg3MDI4IDUuMzU1MTcgMTAuMTg1NiA1LjMzNzY2IDEwLjU3MDlDNS4zMzc2NiAxMC43MTExIDUuMTYyNDkgMTQuMzAyIDEuMjkxMzUgMTcuMTIyMUMwLjk3NjA0OSAxNy4zNDk4IDAuOTA1OTgzIDE3Ljc4NzcgMS4xMzM3IDE4LjEwM1oiIGZpbGw9IiNBNjI2MjYiLz4KPC9zdmc+Cg==" alt="">
+        <div class="navbar-nav d-md-block d-lg-none p-1 ">
+        <form action="" class="form-inline border">
+          <div class="input-group  ">
+            <span class="input-group-text border-0 bg-white border-start ">
+              کرج
+            </span>
+            <input type="text" name="" id="" class="border-0 form-control">
+            <span class="input-group-text border-0 border-start bg-white">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </form>
+      </div>
     </div>
-    
-    <div class="navbar-main-items">
-      <i class="bi bi-geo-alt"></i>
-      <span class="city">
-        کرج
-      </span>
-    </div>
-    <div class="navbar-main-items">
-      <span>></span>
-      <span class="categories cate-modal">
-        دسته بندی
-      </span>
-    </div>
-    <div class="navbar-main-items">
-      <form action="">
-        <input type="text" name="" id="">
-      </form>
-    </div>
-    <div class="navbar-main-items navbar-account">
-      <i class="fa-solid fa-user-plus"></i>
-      <span class="account">
-      دیوار من
-      </span>
-    </div>
-    <div class="navbar-main-items">
-      <i class="bi bi-chat"></i>
-      <span class="chat">
-        چت
-      </span>
-    </div>
-    <div class="navbar-main-items">
-      <span class="support">
-        پشتیبانی
-      </span>
-    </div>
-    <div class="navbar-main-items">
-      <span class="add-register">
-        ثبت آکهی
-      </span>
-    </div>
-    
-  </div>
-  <!-- navbar end -->
+    <!-- END navbar -->
 
 
-
-
-
-
-</div>
-
-
-</body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea ipsum quia quos nam quidem qui numquam dolorem, sed unde, nobis, vero ducimus enim maxime error minima nesciunt doloribus nemo? Asperiores, perspiciatis omnis eum ratione quia suscipit aut repudiandae esse, tenetur atque illo provident, dolorem dolore rem voluptate? Velit quae temporibus nisi non obcaecati doloribus, similique veniam eaque. Quos, commodi error? Sapiente magnam placeat consequuntur adipisci debitis, cumque iure inventore accusamus temporibus nostrum enim provident dolor ab quo ipsum in eos quos! Suscipit quaerat ducimus excepturi voluptas harum nisi, debitis hic earum? Neque sed odio fugiat placeat quidem perspiciatis quod. Aliquid corrupti pariatur nemo. Suscipit nesciunt tempora, mollitia odio numquam adipisci laudantium debitis tenetur voluptatum, a temporibus consequatur ducimus unde maxime, nisi repudiandae? Quam, hic placeat! Iste est, tempora labore sint fuga, quia ipsam soluta praesentium necessitatibus qui facere, corporis sapiente illum porro temporibus. Ex iure omnis mollitia sed aut pariatur quibusdam tempora esse, consequuntur officiis nulla excepturi? Blanditiis, sed harum molestias optio nemo praesentium atque, quibusdam inventore similique sunt quam dolores necessitatibus. Cum velit illo voluptatibus id at quas voluptates ipsa eos est maxime a fugit sequi aspernatur amet laudantium, facilis vitae alias fuga, quam ullam asperiores dicta reprehenderit rem? Minima, rem eveniet tempore deserunt autem animi sapiente doloribus similique incidunt, voluptate dicta suscipit ipsam delectus quasi rerum molestiae non molestias iure voluptatibus excepturi, sunt deleniti. Molestiae quae maxime ex enim repellat quaerat soluta nesciunt a dolores modi minima ullam maiores, eum magnam, rem impedit molestias ut veniam totam, eos mollitia minus nostrum asperiores libero! Quibusdam, nostrum? Voluptate amet aperiam vel eius numquam, quod ea doloremque nemo modi quaerat velit sed? Et nam minus praesentium animi eos voluptatibus tempora dolores, repellendus vitae atque obcaecati error officiis exercitationem sed mollitia, earum autem, modi ad molestias. Ea possimus pariatur labore ipsa doloribus, minus in dolor nisi ipsum dolorem nemo. Repellendus voluptatum delectus minima autem nam eveniet officia eius maxime consectetur quibusdam itaque atque sequi cumque nihil, at pariatur modi quasi animi deleniti quaerat qui dignissimos ducimus. Quis placeat explicabo minus qui eius ipsum soluta incidunt quam magni sint, quae itaque. Blanditiis eos eveniet aspernatur. Quaerat quidem, fuga doloribus a atque possimus aliquam impedit omnis, aut corporis nulla cum numquam nemo facere aperiam itaque, maiores asperiores. Adipisci tempore dignissimos consequuntur dolorem, quod commodi aliquid, saepe perspiciatis similique quibusdam facilis reiciendis excepturi eos atque ipsam, eligendi molestiae iure. Quibusdam nobis molestias doloremque laboriosam consequatur reiciendis facilis sed dolor minus quos laborum quia est velit magni blanditiis molestiae atque numquam suscipit, adipisci animi itaque assumenda iste! Earum possimus optio voluptatum dolore. Voluptatibus illum soluta cum natus explicabo, eveniet veniam in quaerat commodi dolore velit aut quibusdam quidem modi nam ipsum non ullam animi officiis. Illo, maiores corporis accusamus quod id inventore incidunt repellat eius, molestiae voluptate veritatis deleniti, facilis assumenda quibusdam vel eum quia architecto numquam tempora! Repellat voluptatum explicabo voluptatem. Debitis assumenda repellendus alias aliquam suscipit minus mollitia, illum molestiae atque animi dolores, possimus consequuntur adipisci, placeat quas reprehenderit unde. Deserunt voluptatum sint eos similique esse odit, debitis perspiciatis nemo, adipisci corrupti, officiis aut aliquid soluta quisquam autem eius dicta consectetur aliquam natus repudiandae odio rem laboriosam nihil! Assumenda, nobis dicta! Facere ab velit natus explicabo culpa unde accusantium placeat repellendus nihil esse aspernatur vitae, accusamus id, exercitationem praesentium hic sapiente saepe tenetur reiciendis quae tempore aliquam expedita? Aliquid nesciunt tempora veritatis voluptate adipisci, quibusdam expedita! Ipsum qui tenetur odio hic quisquam voluptas iusto veniam, dolor quas. Sint fugiat omnis vitae quis necessitatibus voluptates quod eum. Facilis corporis ipsam natus dolorem eaque inventore soluta porro accusamus voluptates doloremque maxime officiis dignissimos rerum sunt quidem quo, nisi blanditiis eveniet neque id. Similique tempora saepe expedita inventore, quas impedit repudiandae recusandae magnam corporis libero maxime deleniti ullam laborum reiciendis illum perspiciatis excepturi, dolores suscipit praesentium facere, adipisci autem distinctio? Et necessitatibus laboriosam soluta omnis error possimus accusamus rem nihil explicabo. Molestias quod maxime, rem accusantium nemo quibusdam, nobis omnis fugiat cum amet excepturi eius obcaecati consequuntur expedita debitis deleniti magnam fugit culpa, pariatur ex magni reiciendis. Dolorem veritatis nobis mollitia voluptas distinctio quia unde eum cum sint! Sapiente optio voluptates sint doloribus incidunt. Alias, totam dolor! Deserunt dolorum necessitatibus magnam repellendus id voluptatem enim. Ut illum quidem nam iure cumque. Natus aspernatur beatae libero voluptas sunt molestias pariatur ducimus vel eaque cumque id voluptatem perspiciatis nostrum laborum impedit repellendus incidunt rem aperiam at doloremque doloribus reprehenderit saepe, nemo fuga! Soluta consectetur tempore libero rerum ea, cupiditate iste ad molestiae, minus quis totam eius consequatur nihil nisi. Tenetur sit molestiae vitae perferendis molestias vero repellendus necessitatibus voluptate nulla harum possimus autem tempore, aspernatur quam, provident architecto. Minus magni nihil iure ad facere autem, molestiae fugit aliquid tempora pariatur soluta assumenda commodi dignissimos reiciendis odit ab ut. Totam beatae facere vel, placeat ex aspernatur maxime, hic magni ab nihil quia dolorum tenetur saepe iure. Nihil, perferendis tempore! Repellendus cum veritatis odio ipsa itaque beatae velit maxime natus dolorum aut alias distinctio eaque laudantium, consequatur, commodi enim soluta vitae! Unde provident vero esse enim nobis accusamus expedita similique? Architecto tempore, quas temporibus eius, in, fugit ut sint asperiores praesentium debitis atque cum tenetur ab quia voluptatum nihil accusamus voluptatem cumque hic nobis! Sunt excepturi a at omnis error quae consectetur assumenda, est veniam quia officiis illum aspernatur iure! Doloremque neque, impedit repellendus non voluptas sed culpa sequi quis illo accusantium est maxime provident dolorum ad recusandae unde eum. Exercitationem beatae pariatur natus earum. Voluptates ipsa cupiditate tempore aliquam similique, voluptas nemo, et fugiat, dolorem alias veniam accusamus assumenda! Quos nihil, incidunt distinctio quaerat adipisci debitis iusto praesentium nulla sed veritatis quasi, aut illum. Ut voluptates velit cum temporibus nostrum maxime eius quibusdam sed error voluptate, amet iure nulla optio illo reprehenderit vitae corrupti eveniet! Fugiat deleniti magnam eum, dolorum debitis suscipit repudiandae animi consequuntur quod dicta ipsam aliquam adipisci nulla ratione eligendi. Corrupti sunt commodi est fugit nostrum laborum mollitia, pariatur voluptatibus? Iure nihil fuga fugit et delectus quae minus dolore ut pariatur itaque ducimus possimus, obcaecati cumque, eum, tenetur dignissimos! Quae numquam saepe tenetur itaque officia, reprehenderit vitae molestias debitis voluptate doloribus pariatur, deleniti voluptates. Quasi dolore fugiat placeat aliquid ut repellat aperiam, sed consequuntur nesciunt repellendus voluptate iste quos corporis minus quidem aliquam! Natus error facilis enim nobis facere ad maxime dolores minima neque eum reprehenderit voluptas amet quidem tempore possimus, ipsum laborum nisi quisquam optio explicabo, dicta distinctio unde autem quas. Tempore doloremque similique tempora, accusamus repudiandae maxime repellendus impedit enim consectetur, cum distinctio. Adipisci necessitatibus molestias iste voluptate dicta nulla repudiandae vitae ab ea maxime ex hic quisquam deserunt, quae at ut aliquam labore perspiciatis. Officiis excepturi, libero magnam sed adipisci eius fuga cupiditate enim, saepe aut sapiente, minima numquam id. Dicta, dolore sapiente, temporibus nostrum possimus, aliquam id delectus cum fugiat explicabo placeat neque ratione vitae adipisci reiciendis fuga obcaecati quisquam animi vero quas facere? Ullam necessitatibus nam laudantium rerum. Sapiente explicabo magnam a quas in consequatur et fugit dignissimos praesentium voluptatem voluptatibus adipisci dolores sit, enim excepturi, doloremque laudantium. Voluptatum corrupti ullam ipsam maxime inventore nihil voluptates non, alias qui voluptate nostrum ipsum recusandae eius soluta aliquid rerum sapiente hic veritatis itaque eos nobis esse libero numquam omnis. Fuga commodi blanditiis libero placeat sapiente temporibus, quae impedit iste repellendus nihil ullam officiis minima aperiam quos quia! Tenetur vitae, voluptatem officiis doloremque obcaecati error eum quisquam expedita voluptate eaque praesentium earum delectus. Veniam ab quos ducimus commodi? Dolore incidunt hic ad, dolorem aspernatur similique harum molestias deleniti beatae minima enim, aliquid repellat soluta non numquam quam quaerat temporibus doloribus quisquam tenetur voluptates! Veritatis neque sint officia. Reprehenderit sit eum, quaerat accusamus quod, nam odio corrupti error dicta nisi inventore consectetur labore ratione delectus doloribus placeat tempore vitae illum architecto cupiditate. Porro earum labore, nostrum alias quaerat ullam laudantium voluptas laboriosam deserunt nisi in qui commodi rem possimus fugit. Tempore doloribus est ipsam nulla hic architecto beatae aspernatur. Iste quaerat officia tenetur qui perspiciatis earum tempora obcaecati recusandae! Architecto sit, quam eum quos dolor ex debitis libero velit, maxime ratione eos perspiciatis omnis beatae dolore eligendi cupiditate sed iusto. Molestias dolorum veritatis velit hic qui corrupti sed, pariatur nihil ad dicta doloribus aliquid tenetur exercitationem quia impedit similique distinctio dolores! Eligendi, in odit necessitatibus dolor rerum fuga unde perferendis. Ipsa aperiam cum, eius est numquam voluptate totam voluptatem, saepe adipisci ullam repellat omnis? Corporis praesentium dicta consequuntur odit maxime, ullam soluta nostrum voluptates hic quibusdam distinctio dolorem optio at cupiditate voluptatum. Ipsum, totam ad sint quae ea harum officia itaque dignissimos similique labore possimus, soluta magnam autem expedita! Obcaecati qui placeat fuga, at architecto aut nobis mollitia, amet aliquid in necessitatibus repellat dolorem blanditiis minima fugit? Consequuntur similique libero blanditiis cum voluptates hic facilis beatae officiis quae, nostrum velit omnis culpa. Similique recusandae tenetur iure dignissimos! Numquam dicta iste fuga illum, tenetur officiis dolores nisi, reprehenderit minima maiores molestiae a expedita quasi! Vitae fugiat velit qui vel commodi laborum, doloremque inventore totam possimus suscipit, natus distinctio nesciunt assumenda ab unde eveniet est hic tempora?
+    <script src="./JS/jquery-3.6.1.slim.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
