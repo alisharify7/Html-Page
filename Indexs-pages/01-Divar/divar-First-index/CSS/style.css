@@ -5,13 +5,14 @@
 a{
     text-decoration:none !important;
 }
-
 .cs-img-w{
     width: 4rem;
 }
+
 .icons{
     color:black !important;
 }
+
 .h-cs-p{
     height:100vh !important;
 }
@@ -19,4 +20,17 @@ a{
 .fs-cs-p{
     font-size:0.9rem;
     font-weight: bold;
+}
+
+.input-focus:focus-within {
+    border: 1px solid var(--brand-color) !important;
+    box-shadow: none !important;
+}
+
+.hover-black:hover{
+    color:black !important;
+}
+
+.hover-black{
+    transition: color var(--animation-speed);
 }

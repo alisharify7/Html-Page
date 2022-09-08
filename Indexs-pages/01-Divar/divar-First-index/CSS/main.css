@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:sans;
     src: url('../fonts/sans1.ttf');
@@ -7,4 +6,8 @@
 :root{
         font-weight: bold;
         --bs-font-sans-serif :sans !important;
+
+        --brand-color:#a62626;
+        --brand-color-hover:#c93c3c;
+        --animation-speed : .8s;
 }

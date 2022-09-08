@@ -1,21 +1,111 @@
-body{
-    font-family: sans !important;
+a {
+    text-decoration: none !important;
+    color: var(--color-gray) !important;
 }
-.navbar{
+
+.navbar {
     font-family: sans !important;
     font-size: 1rem;
 }
 
-.fs-10{
-    font-size:0.8rem;
+.fs-10 {
+    font-size: 0.8rem;
 }
-.add-register-btn-header{
+
+.add-register-btn-header {
     background-color: var(--brand-color);
-    
+
 }
-.add-register-btn-header:hover{
-    
+
+.add-register-btn-header:hover {
+
     background-color: var(--brand-color-hover);
     transition: all 1s;
+}
 
+.nav-item:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+
+.text-black-hover:hover {
+    color: #000 !important;
+}
+
+.text-color-brand {
+    color: var(--brand-color) !important;
+}
+
+.bg-gray-hover:hover {
+    background-color: var(--color-gray) !important;
+}
+
+.img-card {
+    width: 120px;
+    height: 120px;
+}
+
+.link-ind-page {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-ind-page:hover {
+    color: inherit;
+}
+
+.fs-8 {
+    font-size: .9rem;
+}
+
+.fs-10 {
+    font-size: .7rem;
+}
+
+.fs-11 {
+    font-size: .8rem;
+}
+
+.text-black {
+    color: black;
+}
+
+/* some media query For 767 px to fix cards  */
+@media (max-width: 1166px) {
+    .fs-8 {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Start Responsive Sidebar */
+
+    aside.sidebar {
+        display: none;
+    }
+
+    aside.mini-sidebar {
+        display: block !important;
+    }
+
+    /* End Responsive Sidebar */
+}
+
+@media (max-width: 767px) {
+    .fs-8 {
+        font-size: 1rem;
+    }
+
+    .fs-10 {
+        font-size: .9rem;
+    }
+
+    /* Start Responsive Mini Sidebar */
+
+    .miniSidebar-button {
+        flex-direction: column;
+        font-size: .8rem;
+    }
+
+    /* End Responsive Mini Sidebar */
 }

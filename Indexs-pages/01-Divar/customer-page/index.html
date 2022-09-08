@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/9acc533df2.js" crossorigin="anonymous"></script>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./CSS/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./Main.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحه اصلی دیوار</title>
+</head>
+
+<body>
+
+  <!-- <i class="bi bi-chat"></i>
+  <i class="bi bi-house-door"></i>
+  <i class="fa-solid fa-laptop"></i>
+  <i class="fa-solid fa-user-plus"></i>
+  <i class="bi bi-briefcase"></i>
+  <i class="fa-solid fa-couch"></i>  
+  <i class="bi bi-smartwatch"></i>
+  <i class="bi bi-mic"></i>
+  <i class="bi bi-headset"></i>
+  <i class="bi bi-geo-alt"></i>  
+  <i class="bi bi-search"></i> -->
+
+  <!-- START navbar -->
+  <div class="container-fluid shadow-sm fixed-top bg-white pb-sm-3 pb-lg-0 ">
+    <div class="row">
+      <nav class="mx-5 navbar text-center navbar-expand-lg flex-row-reverse">
+        <!-- brand logo -->
+        <a href="" class="d-none d-lg-block navbar-brand ps-5 pe-3 border-end">
+          <img style="width: 50px"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjM4NTUzIDE0LjYxNzNIOC4yODA0M0M3Ljg5NTA2IDE0LjU2NDcgNy42MzIzMiAxNC4xOTY5IDcuNjg0ODcgMTMuODExNUM4LjE1NzgxIDEwLjY5MzYgOC4zMTU0NiA1LjcxODg3IDguMzE1NDYgNS42ODM4NEM4LjM1MDQ5IDUuMjk4NDggOC42NDgyNyA0Ljk4MzE4IDkuMDUxMTUgNS4wMDA3QzkuNDM2NTIgNS4wMTgyMSA5LjczNDMgNS4zMzM1MSA5LjczNDMgNS43MTg4N0M5LjczNDMgNS45MjkwNyA5LjU1OTEzIDEwLjgxNjIgOS4wODYxOSAxNC4wMjE3QzkuMDMzNjQgMTQuMzcyIDguNzM1ODYgMTQuNjE3MyA4LjM4NTUzIDE0LjYxNzNaTTE4LjQyMjUgMTUuOTEzNUMxOC4xMjQ3IDE1LjkxMzUgMTcuODQ0NCAxNS43MjA4IDE3Ljc1NjkgMTUuNDIzQzE3LjYzNDIgMTUuMDU1MiAxNy44NDQ0IDE0LjY1MjMgMTguMjEyMyAxNC41NDcyQzIxLjUyMjkgMTMuNDk2MiAyMS41NzU0IDEyLjY5MDQgMjEuNTkzIDEyLjI1MjVDMjEuNjI4IDExLjU2OTQgMjEuMTAyNSAxMC42OTM2IDIwLjg5MjMgMTAuMzk1OEMyMC42NjQ2IDEwLjA4MDUgMjAuNzM0NyA5LjY0MjU3IDIxLjA1IDkuNDE0ODVDMjEuMzY1MiA5LjE4NzE0IDIxLjgwMzIgOS4yNTcyIDIyLjAzMDkgOS41NzI1QzIyLjEzNiA5LjcxMjYzIDIzLjA4MTkgMTEuMDI2NCAyMi45OTQzIDEyLjM0MDFDMjIuOTA2NyAxMy45MzQxIDIxLjY4MDUgMTQuOTE1IDE4LjYzMjcgMTUuODk2QzE4LjU5NzYgMTUuODk2IDE4LjU2MjYgMTUuOTAwMyAxOC41Mjc2IDE1LjkwNDdDMTguNDkyNSAxNS45MDkxIDE4LjQ1NzUgMTUuOTEzNSAxOC40MjI1IDE1LjkxMzVaTTguOTExMDIgMTguMzgzM0M4LjcwMDgyIDE4LjM4MzMgOC40OTA2MyAxOC4yOTU3IDguMzY4MDEgMTguMTIwNkM4LjEyMjc4IDE3LjgyMjggOC4xNzUzMyAxNy4zNjczIDguNDkwNjMgMTcuMTM5NkM5LjkyNjk4IDE2LjAwMTEgMTAuODkwNCAxNC45ODUxIDExLjUyMSAxNC4wOTE4QzExLjE3MDYgMTMuOTE2NiAxMC44MDI4IDEzLjY1MzggMTAuNjEwMSAxMy4yMTU5QzEwLjQzNSAxMi44MTMxIDEwLjMyOTkgMTIuMTQ3NCAxMC45NDI5IDExLjI1NDFDMTEuODE4OCA5Ljk1Nzg2IDEyLjY5NDYgOS42NjAwOCAxMy4wMjc0IDkuNTkwMDJDMTMuNDgyOCA5LjUwMjQ0IDEzLjkyMDcgOS43NjUxOCAxNC4wNDM0IDEwLjIwMzFDMTQuMTMwOSAxMC41MTg0IDE0LjM0MTEgMTEuNTE2OCAxMy43MTA1IDEzLjA0MDhDMTQuNTUxMyAxMy4wMjMzIDE1LjIxNyAxMi43OTU1IDE1LjcyNDkgMTIuMzc1MUMxNi43MDU5IDExLjU4NjkgMTYuNzU4NCAxMC4yNTU2IDE2Ljc1ODQgMTAuMjM4MUMxNi43NzU5IDkuODUyNzcgMTcuMDkxMiA5LjU1NDk4IDE3LjQ3NjYgOS41NTQ5OEMxNy44NjE5IDkuNTcyNSAxOC4xNTk3IDkuODg3OCAxOC4xNTk3IDEwLjI3MzJDMTguMTU5NyAxMC4zNDMyIDE4LjA4OTcgMTIuMjE3NSAxNi42MzU4IDEzLjQ0MzZDMTUuNzI0OSAxNC4yMTQ0IDE0LjQ4MTMgMTQuNTQ3MiAxMi45NzQ4IDE0LjQyNDZDMTIuMjU2NyAxNS41MjgxIDExLjExODEgMTYuODI0MyA5LjM0ODkzIDE4LjIyNTZDOS4yMDg4IDE4LjMzMDcgOS4wNjg2NyAxOC4zODMzIDguOTExMDIgMTguMzgzM1pNMTIuNzEyMSAxMS4zMDY2QzEyLjUxOTQgMTEuNDY0MyAxMi4zMDkyIDExLjY5MiAxMi4wODE1IDEyLjA0MjNDMTEuODUzOCAxMi4zOTI3IDExLjgzNjMgMTIuNTg1MyAxMS44NTM4IDEyLjYzNzlDMTEuODg4OCAxMi43MjU1IDEyLjA2NCAxMi44MTMxIDEyLjIzOTIgMTIuODgzMUMxMi41NzIgMTIuMjE3NSAxMi42NzcxIDExLjY5MiAxMi43MTIxIDExLjMwNjZaTTEyLjg4NzMgMTYuMjI4OEMxMi45MDQ4IDE2LjYxNDEgMTMuMjIwMSAxNi45MTE5IDEzLjU4NzkgMTYuOTExOUgxMy42MjNDMTMuNjc1NSAxNi45MTE5IDE0Ljg0OTEgMTYuODc2OSAxNi41MzA3IDE2LjQ5MTVDMTYuOTE2MSAxNi40MDM5IDE3LjE2MTMgMTYuMDM2MSAxNy4wNzM3IDE1LjY1MDdDMTYuOTg2MSAxNS4yNjU0IDE2LjYxODMgMTUuMDIwMSAxNi4yMzI5IDE1LjEwNzdDMTQuNjczOSAxNS40NDA1IDEzLjU3MDQgMTUuNDkzMSAxMy41NTI5IDE1LjQ5MzFDMTMuMTY3NSAxNS41MTA2IDEyLjg2OTcgMTUuODQzNCAxMi44ODczIDE2LjIyODhaTTEuMTMzNyAxOC4xMDNDMS4yNTYzMSAxOC4yNzgyIDEuNDg0MDMgMTguMzgzMyAxLjY5NDIzIDE4LjM4MzNDMS44MzQzNiAxOC4zODMzIDEuOTc0NDkgMTguMzQ4MyAyLjExNDYyIDE4LjI2MDdDNi41NjM4MSAxNS4wMjAxIDYuNzM4OTggMTAuNzgxMSA2LjczODk4IDEwLjYwNkM2LjczODk4IDEwLjIyMDYgNi40NDEyIDkuOTA1MzEgNi4wNTU4MyA5Ljg4NzhDNS42NzA0NyA5Ljg3MDI4IDUuMzU1MTcgMTAuMTg1NiA1LjMzNzY2IDEwLjU3MDlDNS4zMzc2NiAxMC43MTExIDUuMTYyNDkgMTQuMzAyIDEuMjkxMzUgMTcuMTIyMUMwLjk3NjA0OSAxNy4zNDk4IDAuOTA1OTgzIDE3Ljc4NzcgMS4xMzM3IDE4LjEwM1oiIGZpbGw9IiNBNjI2MjYiLz4KPC9zdmc+Cg=="
+            alt="divar logo" />
+        </a>
+
+        <div class="navbar-collapse collapse " id="mynavbar">
+          <ul class="navbar-nav flex-row-reverse w-100">
+            <li class="rounded nav-item mx-2">
+              <a href="" class="nav-link text-muted">
+                <span>کرج</span>
+                <i class="bi bi-geo-alt"></i>
+              </a>
+            </li>
+            <!-- drop down menu -->
+            <li class="rounded nav-item mx-2 dropdown">
+              <a href="" data-bs-toggle="dropdown" class="text-muted nav-link dropdown-toggle">
+                دسته ها
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>موتور</li>
+                  <li>ماشین</li>
+                  <li>الکترونیک</li>
+                  <li>لوازم خودرو</li>
+                  <li>سایر</li>
+                </ul>
+              </div>
+            </li>
+            <!-- drop down menu -->
+
+            <!-- form search  -->
+            <form action="" class="bg form-inline mx-2">
+              <div class="input-group border rounded">
+                <input aria-describedby="basic-addon1" placeholder="جستجو در آگهی ها"
+                  class="form-control border text-start" name="" type="text" id="" />
+                <button class="btn-group bg-white border-0">
+                  <i class="text-muted bi bi-search input-group-text border-0 bg-white p-2" id=""></i>
+                </button>
+
+              </div>
+            </form>
+            <!-- form search  -->
+
+            <li class="rounded nav-item ms-auto">
+              <div class="container d-flex justify-content-center align-items-center hover">
+                <a href="" class="nav-link text-muted">
+                  <span>دیوار من</span>
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </div>
+            </li>
+            <li class="rounded nav-item mx-2">
+              <div class="container d-flex justify-content-center align-items-center hover">
+                <a href="" class="nav-link text-muted">
+                  <span>چت</span>
+                  <i class="bi bi-chat mb-3"></i>
+                </a>
+              </div>
+            </li>
+            <li class="rounded nav-item mx-2">
+              <a href="" class="nav-link text-muted">
+                <span>پشتیبانی</span>
+              </a>
+            <li class="rounded nav-item mx-2">
+            </li>
+            <a href="" class="nav-link text-white border add-register-btn-header rounded">
+              ثبت آگهی
+            </a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+
+    <div class="navbar-nav d-md-block d-lg-none">
+      <form action="" class="form-inline border p-0">
+        <div class="input-group  ">
+          <span class="input-group-text border-0 bg-white border-start ">کرج</span>
+          <input type="text" name="" id="" class="border-0 form-control">
+          <span class="input-group-text border-0 border-start bg-white">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="down-menu fiexd-bottom-block bg-danger">
+    adasd
+  </div>
+  <!-- END navbar -->
+
+
+
+  <div class="container mt-5 pt-3 px-3">
+    <!-- breadcrumb -->
+    <div class="breadcrumb-container  " dir="rtl">
+      <ol class="breadcrumb  rounded px-1 fs-8">
+        <li class="breadcrumb-item">خانه</li>
+        <li class="breadcrumb-item">مشتری</li>
+        <li class="breadcrumb-item">ماشین</li>
+        <li class="breadcrumb-item active">تایتل پیج اینجا</li>
+      </ol>
+    </div>
+    <!-- breadcrumb -->
+
+    <div class="row mt-3">
+      <div class="col-lg-8 col-md-12  ">
+        <div class="carousel bg-danger slide" data-bs-interval="7000" data-bs-ride="carousel" id="carousel-cs">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel-cs" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-cs" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-cs" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- control for slider -->
+            <a href="#carousel-cs" data-bs-slide="prev" role="button" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon bg-dark"></span>
+            </a>
+            <a href="#carousel-cs" data-bs-slide="next" role="button" class="carousel-control-next">
+              <span class="carousel-control-next-icon bg-dark"></span>
+            </a>
+            <!-- control for slider -->
+            <div class="carousel-item active">
+              <img class="d-block carousel-img img-md-fluid" src="./images/slide1.jpg" alt="">
+              <!-- 
+                captionf or each picture
+                <div class="carousel-cation">
+                <span>تصویر 1</span>
+              </div> 
+            -->
+            </div>
+            <div class="carousel-item">
+              <img class="d-block carousel-img img-md-fluid" src="./images/slide2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block carousel-img img-md-fluid" src="./images/slide3.jpg" alt="">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mt-2 d-none d-lg-block">
+          <form action="" class="">
+            <textarea dir="rtl"
+            class="text-right p-2 focus-brand-color text-start textarea-notes" 
+            placeholder="یاداشت شما .. "
+            style="width: 100%;resize: none;" 
+            name="" id=""
+            cols="100%"
+            rows="5"></textarea>
+          </form>
+          <div class="text-start" dir="rtl">
+            <span class="text-muted fs-20 " >
+              یادداشت تنها برای شما قابل دیدن است و پس از حذف آگهی، پاک خواهد شد.
+            </span>
+          </div>
+          <div dir="rtl"  class="mt-4 fs-21">
+            <a href="" class="text-decoration-none text-muted fs-11">
+              <div class=" border-bottom py-3">
+                <i class="bi bi-question-circle"></i>
+                <span>راهنمای خرید امن</span>
+              </div>
+            </a>
+            <a href="" class="text-decoration-none text-muted fs-11 ">
+              <div class=" border-bottom py-3">
+                <i class="bi bi-exclamation-circle"></i>
+                <span>ثبت تخلف یا مشکل آکهی</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 " dir="rtl">
+        <div>
+          <div class="container-cs  d-flex flex-direction-column mt-4">
+            <div class="headers-body text-right">
+              <h1 class="fs-10 mb-4 title-costumer">نشت یابی رفع نم لوله بازکنی کشی فنرزنی نشتی فنرزن</h1>
+              <h5 class="text-muted fs-8"><span>دو ساعت پیش در کرج</span> <span>مشکین دشت</span> <span>مهارت فنی و
+                  خدمات</span></h5>
+
+              <div class="d-flex justify-content-between align-items-center my-4">
+                <div class="w-auto ">
+                  <a href="" class="btn btn-brand btn-cs px-3 text-white text-brand-hover">اطلاعات تماس</a>
+                  <a href="" class="btn btn-brand btn-cs px-5 text-brand bg-white btn-outline-brand">چت</a>
+                </div>
+                <div class="w-auto pe-2">
+                  <a href="#" class="icon-save-share text-muted p-2 "><i class="fs-10 fa-solid fa-bookmark"></i></a>
+                  <a href="#" class="icon-save-share text-muted p-2 "><i class="fs-10 bi bi-share-fill"></i></a>
+                </div>
+              </div>
+              <div class="customer-info fs-info">
+                <div class="d-flex justify-content-between border-bottom  p-2">
+                  <span class="text-muted">وضعیت</span>
+                  <span>نو</span>
+                </div>
+                <div class="d-flex justify-content-between border-bottom  p-2">
+                  <span class="text-muted">قیمت</span>
+                  <span>3760000 تومان</span>
+                </div>
+                <div class="d-flex justify-content-between border-bottom  p-2">
+                  <span class="text-muted">آخرین به‌روزرسانی آگهی</span>
+                  <span>یه ربع پیش</span>
+                </div>
+              </div>
+              <div class="customer-caption mt-4">
+                <span class="h5"> توضیحات</span>
+                <br>
+                <p class="customer-info-product fs-8 pt-3  border-bottom pb-5">
+                  قیمت پایین نشانه کیفیت بالا نیست،به قیمت خرید کنید پخش درب ضد سرقت ساخت با ابعاد سفارشی رنگ و طرح
+                  سفارشی
+                  درب ورودی فلزی
+                  درب چوبی
+                  رویه فلز ایرانی
+                  رویه فلز ترک
+                  رویه راش و گردو و بلوط ...
+                  جهت اطلاعات بیشتر با کارشناسان فروش تماس بگیرید
+                  ارسال به سراسر کشور
+                  آدرس کارخانه و انبار مرکزی
+                  کرج جاده قزلحصار بعد از کوچه میثم ۳/۲نرسیده به نمایندگی ایرانخودرو درب ضد سرقت آرکا
+                </p>
+              </div>
+
+              <div class="category-about-product mt-4 w-100 mb-3">
+                <a href="#"
+                  class="category text-decoration-none text-muted fs-8 px-2 py-1 overflow-hidden bg-light rounded text-muted-hover-light">مصالح
+                  ساختمای</a>
+                <a href="#"
+                  class="category text-decoration-none text-muted fs-8 px-2 py-1 overflow-hidden bg-light rounded text-muted-hover-light">خانه
+                  و سلامت</a>
+                <a href="#"
+                  class="category text-decoration-none text-muted fs-8 px-2 py-1 overflow-hidden bg-light rounded text-muted-hover-light">موتور
+                  و خودرو</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class=" w-100 h-100 mt-4 p-3 d-flex justify-content-between align-items-center">
+        <div class=" d-flex justify-content-center align-center"
+            >
+              <a class="m-3 text-muted hover-black" href=""
+                ><i class="bi bi-twitter"></i>
+              </a>
+              <a class="m-3 text-muted hover-black" href=""
+                ><i class="bi bi-instagram"></i>
+              </a>
+              <a class="m-3 text-muted hover-black" href=""
+                ><i class="bi bi-linkedin"></i>
+              </a>
+              <a class="m-3 text-muted hover-black" href=""><i class="bi bi-github"></i></a>
+        </div>
+        <div class="text-muted fs-7">
+              <span class="px-2 border-end " >درباره دیوار</span>
+              <span class="px-2 border-end" >پشتیبانی و قوانین</span>
+              <span class="px-2 " >بلاگ دیوار</span>
+        </div>
+    </div>
+  </div>
+
+
+
+  <script src="./JS/jquery-3.6.1.slim.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
