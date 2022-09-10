@@ -1,6 +1,6 @@
 
+
 .navbar{
-    font-family: sans !important;
     font-size: 1rem;
 }
 
@@ -20,6 +20,10 @@
     font-size: .8rem ;
 }
 
+.fs-22{
+    font-size: 1rem;
+
+}
 .fs-21{
     font-size: .9rem;
 }
@@ -46,9 +50,7 @@
 .btn-brand{
     background-color:var(--brand-color);
 }
-.btn-cs{
-    font-size: .9rem;
-}
+
 
 .text-brand{
     color: var(--brand-color);
@@ -106,4 +108,21 @@
 
 .textarea-notes{
     border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:1200px)
+{
+    .responsive-btn{
+        font-size: .7rem !important;
+        margin: 0;
+    }
+
+}
+
+@media (max-width:1000px)
+{
+    .responsive-btn{
+        font-size: .9rem !important;
+    }
+
 }

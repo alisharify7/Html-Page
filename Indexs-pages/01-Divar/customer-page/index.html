@@ -12,23 +12,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>صفحه اصلی دیوار</title>
+  <title data-react-helmet="true">دیوار کرج: مرجع انواع نیازمندی و آگهی‌های نو و دست دو در شهر کرج</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://s100.divarcdn.com/static/thewall-assets/favicon-32x32.png">  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://s100.divarcdn.com/static/thewall-assets/apple-touch-icon.png  ">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://s100.divarcdn.com/static/thewall-assets/favicon-16x16.png">
+  <link rel="mask-icon" href="https://s100.divarcdn.com/static/thewall-assets/safari-pinned-tab.svg" color="#a62626">
 </head>
-
 <body>
-
-  <!-- <i class="bi bi-chat"></i>
-  <i class="bi bi-house-door"></i>
-  <i class="fa-solid fa-laptop"></i>
-  <i class="fa-solid fa-user-plus"></i>
-  <i class="bi bi-briefcase"></i>
-  <i class="fa-solid fa-couch"></i>  
-  <i class="bi bi-smartwatch"></i>
-  <i class="bi bi-mic"></i>
-  <i class="bi bi-headset"></i>
-  <i class="bi bi-geo-alt"></i>  
-  <i class="bi bi-search"></i> -->
-
   <!-- START navbar -->
   <div class="container-fluid shadow-sm fixed-top bg-white pb-sm-3 pb-lg-0 ">
     <div class="row">
@@ -110,21 +100,6 @@
       </nav>
     </div>
 
-    <div class="navbar-nav d-md-block d-lg-none">
-      <form action="" class="form-inline border p-0">
-        <div class="input-group  ">
-          <span class="input-group-text border-0 bg-white border-start ">کرج</span>
-          <input type="text" name="" id="" class="border-0 form-control">
-          <span class="input-group-text border-0 border-start bg-white">
-            <i class="fas fa-search"></i>
-          </span>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="down-menu fiexd-bottom-block bg-danger">
-    adasd
-  </div>
   <!-- END navbar -->
 
 
@@ -142,8 +117,8 @@
     <!-- breadcrumb -->
 
     <div class="row mt-3">
-      <div class="col-lg-8 col-md-12  ">
-        <div class="carousel bg-danger slide" data-bs-interval="7000" data-bs-ride="carousel" id="carousel-cs">
+      <div class="col-lg-8 col-md-12">
+        <div class="carousel slide" data-bs-interval="7000" data-bs-ride="carousel" id="carousel-cs">
           <ol class="carousel-indicators">
             <li data-bs-target="#carousel-cs" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carousel-cs" data-bs-slide-to="1"></li>
@@ -176,23 +151,18 @@
 
           </div>
         </div>
-
         <div class="mt-2 d-none d-lg-block">
-          <form action="" class="">
-            <textarea dir="rtl"
-            class="text-right p-2 focus-brand-color text-start textarea-notes" 
-            placeholder="یاداشت شما .. "
-            style="width: 100%;resize: none;" 
-            name="" id=""
-            cols="100%"
-            rows="5"></textarea>
+          <form action="">
+            <textarea dir="rtl" class="text-right p-2 focus-brand-color text-start textarea-notes"
+              placeholder="یاداشت شما .. " style="width: 100%;resize: none;" name="" id="" cols="100%"
+              rows="5"></textarea>
           </form>
           <div class="text-start" dir="rtl">
-            <span class="text-muted fs-20 " >
+            <span class="text-muted fs-20 ">
               یادداشت تنها برای شما قابل دیدن است و پس از حذف آگهی، پاک خواهد شد.
             </span>
           </div>
-          <div dir="rtl"  class="mt-4 fs-21">
+          <div dir="rtl" class="mt-4 fs-21">
             <a href="" class="text-decoration-none text-muted fs-11">
               <div class=" border-bottom py-3">
                 <i class="bi bi-question-circle"></i>
@@ -208,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12 " dir="rtl">
+      <div class="col-lg-4 col-md-12" dir="rtl">
         <div>
           <div class="container-cs  d-flex flex-direction-column mt-4">
             <div class="headers-body text-right">
@@ -218,8 +188,11 @@
 
               <div class="d-flex justify-content-between align-items-center my-4">
                 <div class="w-auto ">
-                  <a href="" class="btn btn-brand btn-cs px-3 text-white text-brand-hover">اطلاعات تماس</a>
-                  <a href="" class="btn btn-brand btn-cs px-5 text-brand bg-white btn-outline-brand">چت</a>
+                    <a href="" class="responsive-btn btn  fs-22 btn-brand btn-cs px-lg-2 px-md-4 fs-10  px-4 text-white text-brand-hover">اطلاعات
+                      تماس</a>
+                    <a href=""
+                      class="responsive-btn btn btn-brand fs-22  btn-cs px-lg-4 px-md-5  px-4  fs-10 text-brand bg-white btn-outline-brand">چت
+                    </a>
                 </div>
                 <div class="w-auto pe-2">
                   <a href="#" class="icon-save-share text-muted p-2 "><i class="fs-10 fa-solid fa-bookmark"></i></a>
@@ -278,24 +251,20 @@
     </div>
 
     <div class=" w-100 h-100 mt-4 p-3 d-flex justify-content-between align-items-center">
-        <div class=" d-flex justify-content-center align-center"
-            >
-              <a class="m-3 text-muted hover-black" href=""
-                ><i class="bi bi-twitter"></i>
-              </a>
-              <a class="m-3 text-muted hover-black" href=""
-                ><i class="bi bi-instagram"></i>
-              </a>
-              <a class="m-3 text-muted hover-black" href=""
-                ><i class="bi bi-linkedin"></i>
-              </a>
-              <a class="m-3 text-muted hover-black" href=""><i class="bi bi-github"></i></a>
-        </div>
-        <div class="text-muted fs-7">
-              <span class="px-2 border-end " >درباره دیوار</span>
-              <span class="px-2 border-end" >پشتیبانی و قوانین</span>
-              <span class="px-2 " >بلاگ دیوار</span>
-        </div>
+      <div class=" d-flex justify-content-center align-center">
+        <a class="m-3 text-muted hover-black" href=""><i class="bi bi-twitter"></i>
+        </a>
+        <a class="m-3 text-muted hover-black" href=""><i class="bi bi-instagram"></i>
+        </a>
+        <a class="m-3 text-muted hover-black" href=""><i class="bi bi-linkedin"></i>
+        </a>
+        <a class="m-3 text-muted hover-black" href=""><i class="bi bi-github"></i></a>
+      </div>
+      <div class="text-muted fs-7">
+        <span class="px-2 border-end ">درباره دیوار</span>
+        <span class="px-2 border-end">پشتیبانی و قوانین</span>
+        <span class="px-2 ">بلاگ دیوار</span>
+      </div>
     </div>
   </div>
 
