@@ -7,8 +7,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- custom css -->
   <link rel="stylesheet" href="./CSS/bootstrap.rtl.min.css" />
-  <link rel="stylesheet" href="./CSS/style.css" />
   <link rel="stylesheet" href="./Main.css" />
+  <link rel="stylesheet" href="./CSS/footer.css" />
+  <link rel="stylesheet" href="./CSS/header.css" />
+  <link rel="stylesheet" href="./CSS/main-card.css" />
+  <link rel="stylesheet" href="./CSS/modal-categoris.css" />
+  <link rel="stylesheet" href="./CSS/modal-city.css" />
+  <link rel="stylesheet" href="./CSS/sidebar.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,19 +30,8 @@
 
 <body>
 
-  <!-- <i class="bi bi-chat"></i>
-  <i class="bi bi-house-door"></i>
-  <i class="fa-solid fa-laptop"></i>
-  <i class="fa-solid fa-user-plus"></i>
-  <i class="bi bi-briefcase"></i>
-  <i class="fa-solid fa-couch"></i>  
-  <i class="bi bi-smartwatch"></i>
-  <i class="bi bi-mic"></i>
-  <i class="bi bi-headset"></i>
-  <i class="bi bi-geo-alt"></i>  
-  <i class="bi bi-search"></i> -->
 
-  <!-- START navbar -->
+<!-- START navbar -->
   <div class="container-fluid shadow-sm fixed-top bg-white pb-sm-3 pb-lg-0 ">
     <div class="row">
       <nav class="mx-5 navbar text-center navbar-expand-lg flex-row-reverse">
@@ -51,30 +46,27 @@
         <div class="navbar-collapse collapse fs-8" id="mynavbar">
           <ul class="navbar-nav flex-row-reverse w-100">
 
-
             <li class="rounded nav-item mx-2">
               <a href="" class="nav-link text-muted" data-bs-toggle="modal" data-bs-target="#selectAreaModal">
                 <span>کرج</span>
                 <i class="bi bi-geo-alt"></i>
               </a>
             </li>
-            <li class="rounded nav-item mx-2">
+            <li class="cursor-pointer rounded nav-item mx-2">
               <a data-bs-toggle="modal" data-bs-target="#opencategories"
                 class="text-muted fs-8 nav-link dropdown-toggle position-relative">
                 <span>دسته ها</span>
               </a>
-              
+
             </li>
 
             <!-- form search in navbar -->
-            <form action="" class="bg form-inline mx-2 ">
-              <div class="input-group border rounded">
-                <input aria-describedby="basic-addon1" placeholder="جستجو در آگهی ها"
-                  class="form-control border text-start fs-8" name="" type="text" id="" />
-                <button class="btn-group bg-white border-0">
-                  <i class="text-muted fs-8 bi bi-search input-group-text border-0 bg-white p-2" id=""></i>
+            <form action="" class="form-inline w-25 bg-light-owen-lighter rounded">
+              <div class="input-group ">
+                <input dir="rtl" class="border-0 form-control p-0 bg-light-owen-lighter" type="text"  placeholder="جستجو در آگهی ها">
+                <button class="border-0 input-group-text btn bg-light-owen-lighter">
+                  <i class=" bi bi-search" id=""></i>
                 </button>
-
               </div>
             </form>
             <!-- form search in navbar  -->
@@ -88,8 +80,8 @@
                   <i class="bi bi-person"></i>
                 </a>
                 <!-- دیوار من dropdown -->
-                <div class="dropdown-menu text-muted fs-11 ">
-                  <a href="" class="dropdown-item px-4 text-black-muted-cs border-bottom">
+                <div class="dropdown-menu text-muted fs-11  ">
+                  <a href="" class="dropdown-item px-4 text-black-muted-cs border-bottom transition-bgcolor-1s ">
                     <div class="fs-11 ">
                       <div class="px-1 py-2">
                         <span>کاربر دیوار</span>
@@ -101,27 +93,33 @@
                       </div>
                     </div>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs border-bottom py-3">
+                  
+                <a href="" data-bs-toggle="modal" data-bs-target="#login-user-modal"
+                      class="dropdown-item px-5 text-black-muted-cs border-bottom py-3 transition-bgcolor-1s">
+                                                      <span>ورود</span>
+                      <i class="bi bi-box-arrow-right"></i>
+                </a>
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs border-bottom py-3 transition-bgcolor-1s ">
                     <span>آگهی های من</span>
                     <i class=" fs-8 bi bi-book pe-1"></i>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom">
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom transition-bgcolor-1s ">
                     <span>نشان شده ها</span>
                     <i class="bi bi-bookmark"></i>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom">
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom transition-bgcolor-1s ">
                     <span>یادداشت ها</span>
                     <i class="bi bi-card-list"></i>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom">
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom transition-bgcolor-1s ">
                     <span>بازدید های اخیر</span>
                     <i class="bi bi-clock-history"></i>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom">
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 border-bottom transition-bgcolor-1s ">
                     <span>دیوار برای کسب و کار ها</span>
                     <i class="bi bi-shop-window"></i>
                   </a>
-                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3">
+                  <a href="" class="dropdown-item px-5 text-black-muted-cs py-3 transition-bgcolor-1s ">
                     <span>خروج</span>
                     <i class="bi bi-box-arrow-right"></i>
                   </a>
@@ -161,11 +159,11 @@
     <!-- responsive header search bar -->
     <div class="navbar-nav d-md-block d-lg-none">
       <form action="" class="form-inline border p-0">
-        <div class="input-group  ">
+        <div class="input-group">
           <span class="input-group-text border-0 bg-white border-start ">کرج</span>
           <input type="text" name="" id="" class="border-0 form-control">
           <span class="input-group-text border-0 border-start bg-white">
-            <i class="fas fa-search"></i>
+            <i class="bi bi-search"></i>
           </span>
         </div>
       </form>
@@ -173,74 +171,74 @@
     <!-- responsive header search bar -->
 
   </div>
-  <!-- END of navbar -->
+<!-- END of navbar -->
 
 
-  <div class="container-fluid mt-5 pt-5" dir="rtl">
+<div class="container-fluid mt-5 pt-5" dir="rtl">
     <div class="row">
 
-      <!-- START SIDEBAR -->
+<!-- START SIDEBAR mini sidebar down -->
       <aside class="col-md-3 position-fixed bottom-0 sidebar ">
         <div class="position-static h-auto">
           <span class="h6">دسته‌ها</span>
           <ul class="list-group border-bottom pb-3">
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-building"></i> &nbsp;&nbsp;
+                <i class="bi bi-building pe-3"></i>
                 املاک
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-car-front-fill"></i> &nbsp;&nbsp;
+                <i class="bi bi-car-front-fill pe-3"></i>
                 وسایل نقلیه
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-phone"></i> &nbsp;&nbsp;
+                <i class="bi bi-phone pe-3"></i>
                 کالای دیجیتال
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-lamp"></i> &nbsp;&nbsp;
+                <i class="bi bi-lamp pe-3"></i>
                 خانه و آشپزخانه
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-brush"></i> &nbsp;&nbsp;
+                <i class="bi bi-brush pe-3"></i>
                 خدمات
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-watch"></i> &nbsp;&nbsp;
+                <i class="bi bi-watch pe-3"></i>
                 وسایل شخصی
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-dice-6"></i> &nbsp;&nbsp;
+                <i class="bi bi-dice-6 pe-3"></i>
                 سرگرمی و فراغت
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-people"></i> &nbsp;&nbsp;
+                <i class="bi bi-people pe-3"></i>
                 اجتماعی
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-door-closed"></i> &nbsp;&nbsp;
+                <i class="bi bi-door-closed pe-3"></i>
                 تجهیزات و صنعتی
               </a>
             </li>
             <li class="list-group-item border-0">
               <a class="d-flex flex-row text-muted fs-8 text-black-hover" href="#">
-                <i class="bi bi-briefcase"></i> &nbsp;&nbsp;
+                <i class="bi bi-briefcase pe-3"></i>
                 استخدام و کاریابی
               </a>
             </li>
@@ -250,7 +248,7 @@
               <a class="text-muted fs-8 w-100 p-3 text-black-hover" onclick="sidebarButtons_animation('selectAreaIcon')"
                 data-bs-toggle="collapse" data-bs-target="#selectArea" href="#">
                 <label id="selectAreaIcon" class="transition-all-1s"><i
-                    class="bi bi-caret-down"></i></label>&nbsp;&nbsp;محل
+                    class="bi bi-caret-down pe-3"></i></label>محل
               </a>
 
               <div id="selectArea" class="collapse">
@@ -268,7 +266,7 @@
                 onclick="sidebarButtons_animation('selectAmountIcon')" data-bs-toggle="collapse"
                 data-bs-target="#selectAmount" href="#">
                 <label id="selectAmountIcon" class="transition-all-1s"><i
-                    class="bi bi-caret-down"></i></label>&nbsp;&nbsp;قیمت
+                    class="bi bi-caret-down pe-3"></i></label>قیمت
               </a>
             </div>
 
@@ -294,7 +292,7 @@
                 onclick="sidebarButtons_animation('selectCustomerStateIcon')" href="#" data-bs-toggle="collapse"
                 data-bs-target="#selectCustomerState">
                 <label id="selectCustomerStateIcon" class="transition-all-1s"><i
-                    class="bi bi-caret-down"></i></label>&nbsp;&nbsp;وضعیت آگهی
+                    class="bi bi-caret-down pe-3"></i></label>وضعیت آگهی
               </a>
             </div>
 
@@ -352,46 +350,54 @@
           </div>
         </div>
       </aside>
-
       <aside class="d-none col-12 mini-sidebar position-fixed bottom-0 start-0 border-top bg-white">
         <div class="d-flex align-items-center justify-content-between">
-          <a class="d-flex align-items-center text-color-brand p-3 fs-10 miniSidebar-button" href="#">دیوار آگهی‌ها</a>
+
+          <a class="d-flex align-items-center text-color-brand p-3 fs-10 miniSidebar-button btn-res-bottom" href="#"><span>دیوار آگهی‌ها</span></a>
+          <!-- open categorie modal -->
+          <button data-bs-target="#opencategories" data-bs-toggle="modal"
+          class="d-flex align-items-center bg-transparent border-0 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button btn-res-bottom "><i
+          class="bi bi-list-ul pe-3 icon-btn-res-bottom "></i><span>دسته‌ها</span>
+        </button>
+        <!-- open categorie modal -->
+          
           <button
-            class="d-flex align-items-center bg-transparent border-0 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button"><i
-              class="bi bi-list-ul"></i>&nbsp;&nbsp;دسته‌ها</button>
-          <button
-            class="d-flex align-items-center bg-transparent border-0 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button"><i
-              class="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;ثبت آگهی</button>
-          <a class="d-flex align-items-center text-muted h-100 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button"
-            href="#"><i class="bi bi-chat-fill"></i>&nbsp;&nbsp;چت</a>
-          <a class="d-flex align-items-center text-muted h-100 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button"
-            href="#"><i class="bi bi-person-fill"></i>&nbsp;&nbsp;دیوار من</a>
-        </div>
+            class="d-flex align-items-center bg-transparent border-0 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button btn-res-bottom"><i
+              class="bi bi-plus-circle-fill  pe-3 icon-btn-res-bottom ">
+            </i><span>ثبت آگهی</span>
+          </button>
+          
+          <a class="  d-flex align-items-center text-muted h-100 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button btn-res-bottom"
+            href="#"><i class="bi bi-chat-fill pe-3 icon-btn-res-bottom "></i><span>چت</span>
+          </a>
+
+          <a class="  d-flex align-items-center text-muted h-100 p-3 text-muted bg-gray-hover text-black-hover miniSidebar-button btn-res-bottom"
+            href="#"><i class="bi bi-person-fill pe-3  icon-btn-res-bottom "></i><span>دیوار من</span>
+          </a>
+        
+          </div>
       </aside>
+<!-- END SIDEBAR mini sidebar down -->
 
-      <!-- END SIDEBAR -->
-
-
-      <!-- start MAIN CARD -->
-
+<!-- start MAIN CARD -->
       <div class="col-md-12 col-lg-9 ms-auto">
         <div class="row" dir="ltr">
           <!-- card start -->
 
           <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border  p-2">
+            <div class="bg-light shadow-sm rounded border p-2">
               <a class="link-ind-page d-flex justify-content-between" href="">
                 <div>
                   <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
                 </div>
                 <div class="text-start d-flex flex-column justify-content-around ">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
+                  <h4 class="fs-8 p-2 text-black costumer-title">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
                   <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">در حد نو</span>
                     <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">850000تومان</span>
                     <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">لحاظی پیش درکرج</span>
                   </div>
                 </div>
               </a>
@@ -405,659 +411,350 @@
                   <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
                 </div>
                 <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
+                  <h4 class="fs-8 pt-2 text-black costumer-title">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
                   <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">در حد نو</span>
                     <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">850000تومان</span>
                     <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
+                    <span class="text-muted fs-8 fs-10 costumer-info-caption">لحاظی پیش درکرج</span>
                   </div>
                 </div>
               </a>
             </div>
           </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-8 fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-8 fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2 ">
-            <div class="bg-light shadow-sm rounded border  p-2">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 p-2">
-            <div class="bg-light shadow-sm rounded border p-2 ">
-              <a class="link-ind-page d-flex justify-content-between" href="">
-                <div>
-                  <img class="img-card" src="https://s101.divarcdn.com/static/pictures/1662608653/wYZQmt9o.jpg" alt="">
-                </div>
-                <div class="text-start d-flex flex-column justify-content-around">
-                  <h4 class="fs-8 pt-2 text-black">اجاق گاز مبله فردارچهارشعله خیلی تمیز</h4>
-                  <div>
-                    <span class="text-muted fs-10">در حد نو</span>
-                    <br>
-                    <span class="text-muted fs-10">850000تومان</span>
-                    <br>
-                    <span class="text-muted fs-10">لحاظی پیش درکرج</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
 
 
           <!-- card start -->
         </div>
       </div>
-      <!-- start MAIN CARD -->
-
-
-
+<!-- END MAIN CARD -->
     </div>
-  </div>
+</div>
+
 
 
 <!-- all Modals here modals (For Search) -->
-
-  <!-- The Modal Citys-->
-  <div class="modal" id="selectAreaModal" dir="rtl">
+<!-- The Modal Citys-->
+  <div class="modal fade" id="selectAreaModal" dir="rtl">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
         <!-- Modal Header -->
-        <div class="modal-header p-4 d-flex flex-column">
+        <div class="modal-header d-flex flex-column border-0 p-4">
+
           <div class="d-flex w-100 justify-content-between">
             <h4 class="modal-title fs-5">انتخاب شهر</h4>
             <button type="button"
               class="bg-transparent text-danger border-0 bg-danger-hover border-radius-30 pe-3 ps-3 fs-10"
-              data-bs-dismiss="modal">حذف همه</button>
+              onclick="document.querySelector('#city-tag-names').innerHTML ='<h6 class=\'text-muted fs-8 pt-2\'>حداقل یک شهر را انتخاب کنید.</h6>'; unchecked_checkboxes('city-tag-checkbox'); document.querySelector('#btnSelectCities').disabled = true;">حذف
+              همه</button>
           </div>
-          <div class="d-flex w-100 mt-2 p-2">
-            <div class="d-flex align-items-center bg-transparent border-danger border-radius-30 w-100 p-2">
-              <h6 class="text-danger fs-8">کرج</h6>
-              <button
-                class="bg-transparent text-danger border-0 border-radius-circle bg-danger-hover fs-10 fw-bold p-1">X</button>
-            </div>
+
+          <div class="d-flex w-100 mt-2 p-2 overflow-auto" id="city-tag-names">
+            <h6 class="text-muted fs-8 pt-2">حداقل یک شهر را انتخاب کنید.</h6>
           </div>
+
+          <div class="form-group position-relative w-100 mt-3 pt-1">
+            <input type="text" class="form-control input-focus border-gray-hover fs-8 ps-5"
+              placeholder="جستجوی در شهرها" />
+            <i class="bi bi-search position-absolute text-muted top-0 m-2 fs-5"></i>
+          </div>
+
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <ul>
+
+            <div id="sectionShowAreas">
+
+              <!-- Each Area -->
+              <li>
+                <div class="border-dark border-bottom text-muted  d-flex flex-column">
+                  <div class="d-flex">
+                    <a class="text-muted d-flex flex-row-reverse justify-content-between fs-8 w-100 py-3 text-black-hover"
+                      onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                      id="city_id" href="#">
+                      <label class="transition-all-1s"><i class="bi bi-caret-left pe-3"></i></label>آذربایجان
+                      غربی
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- End Each Area -->
+              <!-- Each Area -->
+              <li>
+                <div class="border-dark border-bottom  text-muted d-flex flex-column">
+                  <div class="d-flex">
+                    <a class="text-muted d-flex flex-row-reverse justify-content-between fs-8 w-100 py-3 text-black-hover"
+                      onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                      id="city_id" href="#">
+                      <label class="transition-all-1s"><i class="bi bi-caret-left pe-3"></i></label>آذربایجان
+                      غربی
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- End Each Area -->
+              <!-- Each Area -->
+              <li>
+                <div class="border-dark border-bottom text-muted d-flex flex-column">
+                  <div class="d-flex">
+                    <a class="text-muted d-flex flex-row-reverse justify-content-between fs-8 w-100 py-3 text-black-hover"
+                      onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                      id="city_id" href="#">
+                      <label class="transition-all-1s"><i class="bi bi-caret-left pe-3"></i></label>آذربایجان
+                      غربی
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- End Each Area -->
+              <!-- Each Area -->
+              <li>
+                <div class="border-dark border-bottom d-flex flex-column">
+                  <div class="d-flex">
+                    <a class="text-muted d-flex flex-row-reverse justify-content-between fs-8 w-100 py-3 text-black-hover"
+                      onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                      id="city_id" href="#">
+                      <label class="transition-all-1s"><i class="bi bi-caret-left pe-3"></i></label>آذربایجان
+                      غربی
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- End Each Area -->
+              <!-- Each Area -->
+              <li>
+                <div class="border-dark border-bottom d-flex flex-column">
+                  <div class="d-flex">
+                    <a class="text-muted d-flex flex-row-reverse justify-content-between fs-8 w-100 py-3 text-black-hover"
+                      onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                      id="city_id" href="#">
+                      <label class="transition-all-1s"><i class="bi bi-caret-left pe-3"></i></label>آذربایجان
+                      غربی
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- End Each Area -->
+
+            </div>
+
+
+            <!-- Partial view for select CITY in each AREA -->
+
+            <div class="d-none d-flex flex-column overflow-auto" id="sectionShowCities">
+
+              <div class="d-flex">
+                <a class="text-dark fs-11 w-100 p-3 ps-0 d-flex"
+                  onclick="document.querySelector('#sectionShowAreas').classList.toggle('d-none'); document.querySelector('#sectionShowCities').classList.toggle('d-none');"
+                  href="#">
+                  <label class="text-muted fs-5"><i class="bi bi-arrow-right pe-3"></i></label>همه شهرها
+                </a>
+              </div>
+
+              <div>
+                <ul>
+
+                  <!-- Each City -->
+                  <li>
+                    <a class="text-dark d-flex flex-row-reverse justify-content-between fs-11 w-100 my-3 p-2 py-0 d-flex"
+                      href="#">
+                      <input class="city-tag-checkbox mx-5 pe-3" type="checkbox" name="" id="checkbox-tag-فردیس"
+                        onclick="selectCityfromArea('فردیس', this.checked)">فردیس
+                    </a>
+                  </li>
+                  <!-- End Each City -->
+                  <!-- Each City -->
+                  <li>
+                    <a class="text-dark d-flex flex-row-reverse justify-content-between fs-11 w-100 my-3 p-2 py-0 d-flex"
+                      href="#">
+                      <input class="city-tag-checkbox mx-5 pe-3" type="checkbox" name="" id="checkbox-tag-کرج"
+                        onclick="selectCityfromArea('کرج', this.checked)">کرج
+                    </a>
+                  </li>
+                  <!-- End Each City -->
+                  <!-- Each City -->
+                  <li>
+                    <a class="text-dark d-flex flex-row-reverse justify-content-between fs-11 w-100 my-3 p-2 py-0 d-flex"
+                      href="#">
+                      <input class="city-tag-checkbox mx-5 pe-3" type="checkbox" name="" id="checkbox-tag-گوهردشت"
+                        onclick="selectCityfromArea('گوهردشت', this.checked)">گوهردشت
+                    </a>
+                  </li>
+                  <!-- End Each City -->
+                  <!-- Each City -->
+                  <li>
+                    <a class="text-dark d-flex flex-row-reverse justify-content-between fs-11 w-100 my-3 p-2 py-0 d-flex"
+                      href="#">
+                      <input class="city-tag-checkbox mx-5 pe-3" type="checkbox" name="" id="checkbox-tag-زورآباد"
+                        onclick="selectCityfromArea('عظیمیه جنوبی (اسلام آباد)', this.checked)">زورآباد
+                    </a>
+                  </li>
+                  <!-- End Each City -->
+                  <!-- Each City -->
+                  <li>
+                    <a class="text-dark d-flex flex-row-reverse justify-content-between fs-11 w-100 my-3 p-2 py-0 d-flex"
+                      href="#">
+                      <input class="city-tag-checkbox mx-5 pe-3" type="checkbox" name="" id="checkbox-tag-عظیمیه"
+                        onclick="selectCityfromArea('عظیمیه', this.checked)">عظیمیه
+                    </a>
+                  </li>
+                  <!-- End Each City -->
+
+
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- END Partial view for select area in each city -->
+
+          </ul>
         </div>
 
         <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer border-0">
+          <div class="row w-100">
+            <div class="col-md-6 px-1">
+              <button type="button" class="btn bg-light border-1 border-dark text-muted text-black-hover w-100"
+                data-bs-dismiss="modal">انصراف</button>
+            </div>
+            <div class="col-md-6 px-1">
+              <button type="button" class="btn bg-color-brand border-0 text-black-hover w-100 text-white"
+                id="btnSelectCities" disabled>تایید</button>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
   </div>
-  <!-- End of The Modal Citys-->
+<!-- End of The Modal Citys-->
 
-
-  <!-- modal of categories -->
+<!-- modal of categories -->
   <div class="modal fade" id="opencategories" dir="rtl">
     <div class="modal-dialog  modal-dialog-centered">
       <div class="modal-content ">
         <div class="div modal-header cursor-pointer">
-          <span>دسته بندی ها</span>
+          <span class="h4">دسته بندی ها</span>
           <i class="bi bi-archive"></i>
         </div>
         <!-- body of modal   -->
         <div class="modal-body p-1 fs-8 ">
-              <div class='px-3 py-2 w-100 hover-light  cursor-pointer transition-bgcolor-1s border-bottom'>
-                <i class="bi bi-house-door text-muted"></i>
-                  <a href="" class="text-muted">املاک و خانه</a>
-                </div>
+          <div class='px-3 py-2 w-100 hover-light  cursor-pointer transition-bgcolor-1s border-bottom'>
+            <i class="bi bi-house-door text-muted"></i>
+            <a href="" class="text-muted">املاک و خانه</a>
+          </div>
 
-                <div class='px-3 py-2 w-100 cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-car-front text-muted"></i>
-                  <a href="" class="text-muted">وسایل نقلیه</a>
-                </div>
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-phone text-muted"></i>
-                  <a href="" class="text-muted">کالای دیجیتال</a>
-                </div>
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-lamp text-muted"></i>
-                  <a href="" class="text-muted">خانه و آشپزخانه</a>
-                </div>
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-palette2 text-muted"></i>
-                  <a href="" class="text-muted">خدمات</a>
-                </div>
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-smartwatch text-muted"></i>
-                  <a href="" class="text-muted">وسایل شخصی</a>
-                </div>
+          <div class='px-3 py-2 w-100 cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-car-front text-muted"></i>
+            <a href="" class="text-muted">وسایل نقلیه</a>
+          </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-phone text-muted"></i>
+            <a href="" class="text-muted">کالای دیجیتال</a>
+          </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-lamp text-muted"></i>
+            <a href="" class="text-muted">خانه و آشپزخانه</a>
+          </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-palette2 text-muted"></i>
+            <a href="" class="text-muted">خدمات</a>
+          </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-smartwatch text-muted"></i>
+            <a href="" class="text-muted">وسایل شخصی</a>
+          </div>
 
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-dice-5 text-muted"></i>
-                  <a href="" class="text-muted">سرگرمی و فراغت</a>
-                </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-dice-5 text-muted"></i>
+            <a href="" class="text-muted">سرگرمی و فراغت</a>
+          </div>
 
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-people-fill text-muted"></i>
-                  <a href="" class="text-muted">اجتماعی</a>
-                </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-people-fill text-muted"></i>
+            <a href="" class="text-muted">اجتماعی</a>
+          </div>
 
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
-                  <i class="bi bi-mic text-muted"></i>
-                  <a href="" class="text-muted">تحهیزات و صنعتی</a>
-                </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s  border-bottom'>
+            <i class="bi bi-mic text-muted"></i>
+            <a href="" class="text-muted">تحهیزات و صنعتی</a>
+          </div>
 
-                <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s '>
-                  <i class="bi bi-briefcase text-muted"></i>
-                  <a href="" class="text-muted">استخدام و کاریابی</a>
-                </div>
+          <div class='px-3 py-2 w-100  cursor-pointer  hover-light transition-bgcolor-1s '>
+            <i class="bi bi-briefcase text-muted"></i>
+            <a href="" class="text-muted">استخدام و کاریابی</a>
+          </div>
         </div>
         <!-- end of body modal -->
-          <div class="modal-footer justify-content-between ">
-            <a href="" class="btn bg-brand-color text-white">
-              همه آگهی ها
-            </a>
-            <button class="btn bg-light-owen" data-bs-dismiss="modal">
-              <span>خروج</span>
-            </button>
-          </div>
+        <div class="modal-footer justify-content-between ">
+          <a href="" class="btn bg-brand-color text-white">
+            همه آگهی ها
+          </a>
+          <button class="btn bg-light-owen" data-bs-dismiss="modal">
+            <span>خروج</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <!-- modal of categories -->
-  
+<!-- modal of categories -->
+    <!-- modal login user -->
+  <div class="modal fade " id="login-user-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+        <div class="modal-header p-4 w-100">
+          <div class="d-flex justify-content-between w-100">
+            <span class="btn btn-close" data-bs-dismiss="modal"></span>
+            <h5>ورود به حساب کاربری</h5>
+          </div>
+        </div>
+        <div class="modal-body ">
+          <h4 class="text-start px-2 py-3">ایمیل خود را وارد کنید</h4>
+          <p dir="rtl" class="fs-8 p-2 text-muted">برای استفاده از امکانات دیوار، لطفاً ایمیل خود را وارد کنید. کد تأیید
+            به این ایمیل ارسال خواهد شد.</p>
+          <div>
+            <!-- email -->
+            <form id="form-register-login" action="/" class="form-inline py-3">
+              <div class="input-group">
+                <input type="text" name="" 
+                  id="email-form-register-login"
+                  class="form-control p-2"
+                  placeholder="temp@temp.org">
+              </div>
+              <!-- email -->
+              <div class="terms py-4 fs-8 text-start border-bottom pb-5">
+                <span>
+                  <a href="#" class="text-color-brand">شرایط استفاده از خدمات</a>
+                  و
+                  <a href="#" class="text-color-brand">
+                    حریم خصوصی
+                  </a>
+                  دیوار را می پذیرم
+                </span>
+              </div>
+              <div class=" d-flex">
+                <input  type="submit" id="btn-confirm-login-user"
+                value="تایید"
+                 class="mt-3 btn bg-color-brand text-white px-5 py-2 fs-5 ms-auto">        
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- modal login user -->
+
 
   <script src="./JS/jquery-3.6.1.slim.min.js"></script>
   <script src="JS/bootstrap.bundle.min.js"></script>
   <script src="JS/script.js"></script>
 </body>
-
 </html>

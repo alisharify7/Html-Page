@@ -1,0 +1,32 @@
+.bg-danger-hover:hover {
+    background-color: rgba(219, 97, 97, 0.068) !important;
+}
+.fs-8{
+    font-size: .9rem;
+}
+.input-focus:focus-within{
+    border: 2px solid var(--brand-color) !important;
+    box-shadow: none !important;
+}
+.border-gray-hover:hover {
+    border-color: var(--color-gray);
+}
+.text-black-hover:hover{
+    color: #000 !important;
+}
+.transition-all-1s{
+    transition: all 1s;
+}
+.border-radius-30 {
+    border-radius: 30px;
+}
+/* 
+.border-radius-circle {
+    border-radius: 50%;
+} */
+.bg-color-brand {
+    background-color: var(--brand-color) !important;
+}
+.text-black-hover:hover{
+    color: #000 !important;
+}

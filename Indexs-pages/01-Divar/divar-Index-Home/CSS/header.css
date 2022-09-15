@@ -1,0 +1,36 @@
+.fs-8 {
+    font-size: .9rem;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.bg-light-owen-lighter{
+    background-color: var(--color-gray-lighter);
+}
+.fs-11 {
+    font-size: .8rem;
+}
+.transition-bgcolor-1s {
+    transition: background-color 1s !important;
+}
+.text-muted-light{
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+.text-black-muted-cs{
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.add-register-btn-header {
+    background-color: var(--brand-color);
+}
+.add-register-btn-header:hover {
+    background-color: var(--brand-color-hover);
+    transition: all 1s;
+}
+.nav-item:hover {
+    background-color: #eee;
+    transition: all .5s;
+}
+.bg-light-owen{
+    background-color: var(--color-gray);
+}
+

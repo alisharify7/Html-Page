@@ -1,0 +1,16 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+.fs-8 {
+    font-size: .9rem;
+}
+.hover-light:hover {background-color:rgb(225, 221, 221) ;}
+.transition-bgcolor-1s {
+    transition: background-color 1s !important;
+}
+.bg-brand-color{
+    background-color: var(--brand-color);
+}
+.text-white{
+    color: white !important;
+}

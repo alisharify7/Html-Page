@@ -1,0 +1,16 @@
+
+.fs-8 {
+    font-size: .9rem;
+}
+.fs-10{
+    font-size: .7rem;
+}
+.fs-11{
+    font-size: .8rem;
+}
+.text-color-brand {
+    color: var(--brand-color) !important;
+}
+.bg-color-brand {
+    background-color: var(--brand-color) !important;
+}

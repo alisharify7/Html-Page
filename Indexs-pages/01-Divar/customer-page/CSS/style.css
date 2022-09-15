@@ -1,35 +1,65 @@
-
-
+a{
+    text-decoration:none;
+}
 .navbar{
     font-size: 1rem;
 }
-
-.fs-8{
-    font-size:0.8rem;
-}
-.fs-7{
-    font-size:0.6rem;
-}
-
-.fs-10{
-    font-size: 1.3rem;
+.bold-title{
     font-weight: bold;
 }
 
-.fs-20{
-    font-size: .8rem ;
+.fs-6{
+    font-size:0.6rem;
 }
-
-.fs-22{
+.fs-7{
+    font-size:0.7rem;
+}
+.fs-8{
+    font-size:0.8rem;
+}
+.fs-9{
+    font-size:0.9rem;
+}
+.fs-10{
     font-size: 1rem;
+    font-weight: bold;
+}
+
+.fs-11{
+    font-size: 1.1rem ;
+}
+
+.fs-12{
+    font-size: 1.2rem;
 
 }
-.fs-21{
-    font-size: .9rem;
+.fs-13{
+    font-size: 1.4rem;
 }
+
 .fs-info{
     font-size: .95rem;
 }
+
+.text-black-hover:hover {
+    color: #000 !important;
+}
+.text-black-muted-cs{
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-brand-color{
+    background-color: var(--brand-color);
+}
+
+.transition-bgcolor-1s{
+    transition: background-color 1s !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 
 .add-register-btn-header{
     background-color: var(--brand-color);
@@ -51,7 +81,14 @@
     background-color:var(--brand-color);
 }
 
+.hover-light:hover {background-color:rgb(225, 221, 221) ;}
 
+.bg-light-owen{
+    background-color: var(--color-gray);
+}
+.bg-light-owen-lighter{
+    background-color: var(--color-gray-lighter);
+}
 .text-brand{
     color: var(--brand-color);
 }
@@ -109,6 +146,8 @@
 .textarea-notes{
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+
 
 @media (max-width:1200px)
 {
