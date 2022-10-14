@@ -45,6 +45,14 @@ ___
 
 ## 03. index - pages
 <img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/01-Divar/divar-First-index/image/index.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/customer-mobile-1.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/home-mobile-size.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/home-tablet-size.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/index-pc-mobile.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/index-pc.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/pro-mobile-foot.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/pro-mobile-size.png" width="600px">
+<img src="https://github.com/alisharify7/Html-Page/blob/main/Indexs-pages/01-Divar/Readme-files/pro-home.png" width="600px">
 
 ___
 
