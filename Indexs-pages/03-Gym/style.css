@@ -1,5 +1,19 @@
 body{
+    direction :rtl;
 }
+
+
+/* utils */
+.lh-1{
+    line-height: 1.5 !important;
+}
+.lh-2{
+    line-height: 2 !important;
+}
+.lh-3{
+    line-height: 3 !important;
+}
+/* end of utils */
 
 
 /* header */
@@ -33,7 +47,7 @@ header{
 
 @keyframes fade_left {
     0%{
-        transform:translateX(-150px);
+        transform:translateX(-40px);
         opacity:0 ;
     }
     100%{
@@ -44,7 +58,7 @@ header{
 }
 @keyframes fade_right{
     0%{
-        transform:translateX(150px);
+        transform:translateX(30px);
         opacity:0 ;
     }
     100%{
@@ -52,6 +66,15 @@ header{
         opacity:1 ;
 
     }
+}
+
+.fade_right{
+    animation-name: fade_right;
+    animation-duration:2s;
+}
+.fade_left{
+    animation-name: fade_left;
+    animation-duration:2s;
 }
 
 .nav-menu-top{
@@ -84,3 +107,10 @@ header{
 
 
 /* end of header */
+
+
+/* awrds */
+.award{
+    background:#151f20 ;
+}
+/* end of awrds */
