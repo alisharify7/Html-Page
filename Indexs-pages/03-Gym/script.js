@@ -25,3 +25,61 @@ window.addEventListener("scroll", e => {
     }
 
 });
+
+function hidden_all_cats(){
+    let filters_img = document.querySelectorAll(".filter");
+    filters_img.forEach((img)=>{
+        img.classList.add("d-none")
+    })
+
+}
+
+
+let cat_parent = document.querySelectorAll(".gallery-list-item");
+let filters_img = document.querySelectorAll(".filter");
+cat_parent.forEach((cat)=> {
+    cat.addEventListener("click", e => {
+        
+        cat_parent.forEach(each => {
+            if(each == e.currentTarget)
+            {
+                each.classList.add("active-item")
+            }
+            else{
+                each.classList.remove("active-item")
+
+            }
+        })
+
+        let value = e.currentTarget.dataset.filter
+        if(value == "all")
+        {
+            filters_img.forEach((img)=>{
+                img.classList.remove("d-none")
+            })
+            return;
+        }else{
+            if(value == "cat1")
+            {
+                hidden_all_cats();
+                document.querySelectorAll(".cat1").forEach( img => {
+                    img.classList.remove("d-none")
+                })
+            }
+            else if(value == "cat2")
+            {
+                hidden_all_cats();
+                document.querySelectorAll(".cat2").forEach( img => {
+                    img.classList.remove("d-none")
+                })
+            }
+            else if(value == "cat3")
+            {
+                hidden_all_cats();
+                document.querySelectorAll(".cat3").forEach( img => {
+                    img.classList.remove("d-none")
+                })
+            }
+        }
+    })
+})
