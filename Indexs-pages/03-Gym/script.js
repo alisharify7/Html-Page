@@ -26,6 +26,22 @@ window.addEventListener("scroll", e => {
 
 });
 
+
+window.addEventListener("scroll", e=>{
+    if(window.scrollY >= 4400)
+    {
+        document.querySelector(".card-1").classList.add("MoveFromRight")
+        document.querySelector(".card-2").classList.add("MoveFromBottom")
+        document.querySelector(".card-3").classList.add("MoveFromLeft")
+    }
+    else{
+        document.querySelector(".card-1").classList.remove("MoveFromRight")
+        document.querySelector(".card-2").classList.remove("MoveFromBottom")
+        document.querySelector(".card-3").classList.remove("MoveFromLeft")
+        
+    }
+})
+
 function hidden_all_cats(){
     let filters_img = document.querySelectorAll(".filter");
     filters_img.forEach((img)=>{
@@ -83,3 +99,5 @@ cat_parent.forEach((cat)=> {
         }
     })
 })
+
+

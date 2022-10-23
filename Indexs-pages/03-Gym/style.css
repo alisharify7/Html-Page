@@ -164,3 +164,147 @@ header{
 }
 
 /* end of trainers */
+
+
+/* membership */
+
+.card-1, .card-2, .card-3{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)) ,url(./images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: 8px 10px 50px #555;
+    max-width: 370px;
+}
+.card-list-item{
+    border-bottom: 1px solid #fff;
+    width:55%;
+    margin:auto;
+}
+
+.membership-card-bottom{
+    background-color: #2980b9 !important;
+    width:130px;
+    box-sizing: 5px 8px 18px black;
+    transition: all 0.5s !important;
+}
+
+.membership-card-bottom:hover{
+    background-color: #205f89 !important;
+    transform:translateY(-5px);
+}
+
+@keyframes MoveFromLeft {
+    0%{
+        transform:translateX(-100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+@keyframes MoveFromRight{
+    0%{
+        transform:translateX(100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+@keyframes MoveFromBottom{
+    0%{
+        transform:translateY(100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+    }
+}
+
+
+.MoveFromLeft{
+    animation-name: MoveFromLeft;
+    animation-duration:2s;
+}
+.MoveFromBottom{
+    animation-name: MoveFromBottom;
+    animation-duration:2s;
+    
+}
+.MoveFromRight{
+    animation-name: MoveFromRight;
+    animation-duration:2s;
+
+}
+
+/* end of membership */
+
+/* contact  */
+    .contact{
+        background: linear-gradient(105deg,rgba(0, 0, 0, 0.8) 50%,rgba(0,0,0,0.1) 0%,transparent 50% ),url(./images/10.jpg);
+        background-size: cover;
+        background-position:center ;
+        background-repeat: no-repeat;
+    }
+    .input{
+        background:transparent !important;
+        border:none !important;
+        border-color:transparent !important;
+        border-radius: 0 !important ;
+        color: #000;
+        border-bottom: 2px solid #ccc !important;
+        transition:all 0.5s;
+    }
+    .input:focus{
+        box-shadow: none !important;
+        border-bottom: 2px solid #f5593d !important;
+    }
+
+    .submit-button{
+        background-color: #2980b9 !important;
+        color: #fff;
+        transition: all 0.5s !important;
+    }
+    .submit-button:hover{
+        background-color: #3c8bc0 !important;
+        transform:translateY(-5px)
+    }
+    .label{
+        display: block;
+        font-size: 13px;
+        color: #777;
+        margin-top: -70px;
+        margin-right: 4px;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .input:placeholder-shown + .label{
+        opacity: 0;
+        visibility: hidden;
+        transform:translate(20px, 20px)
+    }
+
+    @media (max-width:992px) {
+        .contact{
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+        }
+    }
+    /* end of contact  */
+
+
+    /* footer */
+    .footer-link {
+        color: #EEE !important;
+        font-size: 15px;
+        transition: color 0.5s03s;
+        text-decoration: none !important;
+    }
+    .footer-link:hover {
+        color: #337ba4 !important;
+    }
+    /* end of footer */
