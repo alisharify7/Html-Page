@@ -1,0 +1,310 @@
+body{
+    direction :rtl;
+}
+
+
+/* utils */
+.lh-1{
+    line-height: 1.5 !important;
+}
+.lh-2{
+    line-height: 2 !important;
+}
+.lh-3{
+    line-height: 3 !important;
+}
+
+.underline{
+    width:150px;
+    border: 2px solid #ccc;
+    margin: auto;
+}
+
+
+/* end of utils */
+
+
+/* header */
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)),url("./header.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.banner-header{
+    animation-name: fade_left;
+    animation-duration:2s;
+}
+.banner-par{
+    animation-name: fade_right;
+    animation-duration:2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fade_left {
+    0%{
+        transform:translateX(-40px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+@keyframes fade_right{
+    0%{
+        transform:translateX(30px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+
+.fade_right{
+    animation-name: fade_right;
+    animation-duration:2s;
+}
+.fade_left{
+    animation-name: fade_left;
+    animation-duration:2s;
+}
+
+.nav-menu-top{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7));
+    padding: 1.4rem 0 !important;
+    transition: all 0.5;
+}
+
+.bg-dark-50{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7));
+}
+
+.line1 , .line2, .line3
+{
+    width: 23px;
+    height:3px;
+    background-color: black;
+    transition: all 0.5s;
+}
+.change .line1{
+    transform:rotate(45deg) translate(5px,6px);
+}
+.change .line2{
+    opacity:0;
+}
+.change .line3{
+    transform:rotate(-45deg) translate(5px,-5px);
+
+} 
+
+
+/* end of header */
+
+
+/* awrds */
+.award{
+    background:#151f20 ;
+}
+/* end of awrds */
+
+
+/* services */
+
+.card-shadow{
+    box-shadow:8px 10px 20px #444;
+}
+.heading{
+    position:absolute;
+    bottom:50px;
+    left: 0px;
+    font-size:30px ;
+    background:#2980b9;
+    width:60%;
+    cursor: pointer;
+    opacity: .8;
+    transition: all 0.8;
+}
+.heading:hover{
+    opacity: 1;
+}
+/* end of services */
+
+
+/* gallery */
+.gallery-list-item{
+    user-select: none;
+    cursor: pointer;
+    color: #777;
+}
+
+.active-item{
+    color: #5fa5ce;
+}
+/* end of gallery */
+
+/* trainers */
+.trainers{
+    background-color: #151f20;
+}
+
+/* end of trainers */
+
+
+/* membership */
+
+.card-1, .card-2, .card-3{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)) ,url(./images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: 8px 10px 50px #555;
+    max-width: 370px;
+}
+.card-list-item{
+    border-bottom: 1px solid #fff;
+    width:55%;
+    margin:auto;
+}
+
+.membership-card-bottom{
+    background-color: #2980b9 !important;
+    width:130px;
+    box-sizing: 5px 8px 18px black;
+    transition: all 0.5s !important;
+}
+
+.membership-card-bottom:hover{
+    background-color: #205f89 !important;
+    transform:translateY(-5px);
+}
+
+@keyframes MoveFromLeft {
+    0%{
+        transform:translateX(-100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+@keyframes MoveFromRight{
+    0%{
+        transform:translateX(100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+
+    }
+}
+@keyframes MoveFromBottom{
+    0%{
+        transform:translateY(100px);
+        opacity:0 ;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1 ;
+    }
+}
+
+
+.MoveFromLeft{
+    animation-name: MoveFromLeft;
+    animation-duration:2s;
+}
+.MoveFromBottom{
+    animation-name: MoveFromBottom;
+    animation-duration:2s;
+    
+}
+.MoveFromRight{
+    animation-name: MoveFromRight;
+    animation-duration:2s;
+
+}
+
+/* end of membership */
+
+/* contact  */
+    .contact{
+        background: linear-gradient(105deg,rgba(0, 0, 0, 0.8) 50%,rgba(0,0,0,0.1) 0%,transparent 50% ),url(./images/10.jpg);
+        background-size: cover;
+        background-position:center ;
+        background-repeat: no-repeat;
+    }
+    .input{
+        background:transparent !important;
+        border:none !important;
+        border-color:transparent !important;
+        border-radius: 0 !important ;
+        color: #000;
+        border-bottom: 2px solid #ccc !important;
+        transition:all 0.5s;
+    }
+    .input:focus{
+        box-shadow: none !important;
+        border-bottom: 2px solid #f5593d !important;
+    }
+
+    .submit-button{
+        background-color: #2980b9 !important;
+        color: #fff;
+        transition: all 0.5s !important;
+    }
+    .submit-button:hover{
+        background-color: #3c8bc0 !important;
+        transform:translateY(-5px)
+    }
+    .label{
+        display: block;
+        font-size: 13px;
+        color: #777;
+        margin-top: -70px;
+        margin-right: 4px;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .input:placeholder-shown + .label{
+        opacity: 0;
+        visibility: hidden;
+        transform:translate(20px, 20px)
+    }
+
+    @media (max-width:992px) {
+        .contact{
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+        }
+    }
+    /* end of contact  */
+
+
+    /* footer */
+    .footer-link {
+        color: #EEE !important;
+        font-size: 15px;
+        transition: color 0.5s03s;
+        text-decoration: none !important;
+    }
+    .footer-link:hover {
+        color: #337ba4 !important;
+    }
+    /* end of footer */
