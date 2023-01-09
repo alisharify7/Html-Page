@@ -37,7 +37,9 @@ demos:
 ----
 
 # 05-admin_panel
-<img src="">
-<img src="">
-<img src="">
+<img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/05-Admin_panel/assets/doc/1.png">
+<img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/05-Admin_panel/assets/doc/4.png">
+<img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/
+05-Admin_panel/assets/doc/2.png">
+<img src="https://github.com/alisharify7/Html-Page/raw/main/Indexs-pages/05-Admin_panel/assets/doc/3.png">
 
