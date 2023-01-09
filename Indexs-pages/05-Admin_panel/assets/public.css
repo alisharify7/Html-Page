@@ -1,0 +1,38 @@
+:root{
+	--base-color:#1C315E;
+	--upper-color:#227C70;
+	--m-color:#E6E2C3;
+	--n-color:#88A47C;
+
+}
+
+
+@font-face {
+	font-family: 'shabnam';
+	src: url( './Fonts/shabnam/Shabnam-Bold-FD.eot' );
+	src: url( './Fonts/shabnam/Shabnam-Bold-FD.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( './Fonts/shabnam/Shabnam-Bold-FD.woff2' ) format( 'woff2' ),
+		url( './Fonts/shabnam/Shabnam-Bold.woff' ) format( 'woff' ),
+		url( './Fonts/shabnam/Shabnam-Bold.ttf' ) format( 'truetype' );
+    font-weight: lighter;
+	font-style: normal;
+}
+
+.bg-base{
+	background-color: var(--base-color) !important;
+}
+
+.bg-upper{
+	background-color: var(--upper-color) !important;
+}
+.bg-n{
+	background-color: var(--n-color) !important;
+}
+.bg-m{
+	background-color: var(--m-color) !important;
+}
+
+
+* {
+    font-family: 'shabnam';
+}
