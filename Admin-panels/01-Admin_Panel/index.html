@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- <link rel="stylesheet" href="./Boostrap/bootstrap.rtl.min.css"> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS Icon only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler mb-2 bg-light" data-bs-toggle="collapse" data-bs-target="#navbar_col">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_col">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a class="navbar-brand text-white d-block text-center mx-auto py-3 mb-4 border-bottom">
+                            <span class="text-capitalize fw-bold"> Admin divar</span>
+                        </a>
+
+                        <div class="border-bottom pb-3">
+                            <img src="./IMAGES/profile.jpg" style="height:100px;" class="mx-3 img-fluid rounded-circle"
+                                alt="admin picture">
+                            <a class="text-white persian text-decoration-none">علی شریفی</a>
+                        </div>
+
+                        <ul class="nav-bar list-unstyled d-flex flex-column mt-3 p-0">
+
+                            <li class="nav-item persian sidebar-active my-1">
+                                <a href="" class="nav-link text-white p-3">
+                                    <i class="bi bi-house-fill fs-5"></i>
+                                    <span>داشبورد</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item persian sidebar-link my-1">
+                                <a href="" class="nav-link text-white p-3">
+                                    <i class="bi bi-people-fill fs-5"></i>
+                                    <span>کاربران</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item persian sidebar-link my-1">
+                                <a href="" class="nav-link text-white p-3">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                    <span>آمار</span>
+                                </a>
+                            </li>
+                            <li class="nav-item persian sidebar-link my-1">
+                                <a href="" class="nav-link text-white p-3">
+                                    <i class="bi bi-hdd-rack-fill "></i>
+                                    <span>وضعیت سایت</span>
+                                </a>
+                            </li>
+                            <li class="nav-item persian sidebar-link my-1">
+                                <a href="" class="nav-link text-white p-3">
+                                    <i class="bi bi-gear-fill"></i>
+                                    <span>تیم فنی</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!--end of sidebar -->
+
+                    <!-- top nav -->
+                    <div class="col-xl-10 col-lg-9 col-md-8 bg-dark fixed-top py-2 me-auto topnav">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <span class="text-light persian p-0 m-0 h4">داشبورد</span>
+                            </div>
+                            <div class="col-md-5">
+                                <form class=" my-4 my-md-0" action="">
+                                    <div class="input-group">
+                                        <button class="btn btn-white search_button">
+                                            <i class="bi bi-search text-white"></i>
+                                        </button>
+                                        <input type="text" class="search_input form-control persian text-white"
+                                            placeholder="جستجو ...">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3 ">
+                                <ul id="navbar-icon-header" class="navbar-nav w-100 p-0 m-0 flex-row ">
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-chat-dots-fill fs-5 text-danger mx-2"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-bell-fill fs-5 text-danger mx-2"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item me-md-auto">
+                                        <a href="#exit" data-bs-toggle="modal" class="nav-link">
+                                            <i class="bi bi-box-arrow-right fs-5 text-danger mx-2"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of top nav -->
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- End of Navigation -->
+
+
+    <!-- cards -->
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row pt-md-5 mt-md-2 mb-5">
+                        <!-- each card -->
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-comman shadow-sm">
+                                <div class="card-body my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary fs-5">
+                                            <span class="persian"> کل کاربران</span>
+                                            <br>
+                                            <span class="persian">50000</span>
+                                        </div>
+                                        <div class="text-secondary fs-1">
+                                            <i class="bi bi-people-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="update d-flex justify-content-between">
+                                        <span class="persian">بروزرسانی</span>
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- each card -->
+                        <!-- each card -->
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-comman shadow-sm">
+                                <div class="card-body my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary fs-5">
+                                            <span class="persian">پست ها</span>
+                                            <br>
+                                            <span class="persian">980000</span>
+                                        </div>
+                                        <div class="text-secondary fs-1">
+                                            <i class="bi bi-folder-plus text-success"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="update d-flex justify-content-between">
+                                        <span class="persian">بروزرسانی</span>
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- each card -->
+                        <!-- each card -->
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-comman shadow-sm">
+                                <div class="card-body my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary fs-5">
+                                            <span class="persian ">شکایات</span>
+                                            <br>
+                                            <span class="persian">0</span>
+                                        </div>
+                                        <div class="text-secondary fs-1">
+                                            <i class="bi bi-emoji-angry text-danger"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="update d-flex justify-content-between">
+                                        <span class="persian">بروزرسانی</span>
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- each card -->
+                        <!-- each card -->
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-comman shadow-sm">
+                                <div class="card-body my-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary fs-5">
+                                            <span class="persian">بازدید</span>
+                                            <br>
+                                            <span class="persian">50000</span>
+                                        </div>
+                                        <div class="text-secondary fs-1">
+                                            <i class="bi bi-graph-up-arrow text-info"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="update d-flex justify-content-between">
+                                        <span class="persian">بروزرسانی</span>
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- each card -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of cards -->
+
+    <!-- progress /  task list-->
+    <section>
+        <div class="row m-0">
+            <div class="col-xl-10 col-lg-9 col-md-8 me-auto ">
+                <div class="row">
+                    <!-- progress bar -->
+                    <div class="col-lg-6">
+                        <div class="bg-dark text-white p-4 rounded">
+                            <h4 class="mb-4">وظایف و پروژه ها</h4>
+                            <!-- project -->
+                            <p class="persian">آماده سازی Api</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                    style="width: 85%;">85%</div>
+                            </div>
+                            <!-- project -->
+                            <hr>
+                            <!-- project -->
+                            <p class="persian">تمیز کردن کد های html</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%;">50%</div>
+                            </div>
+                            <!-- project -->
+                            <hr>
+                            <!-- project -->
+                            <p class="persian">یادگیری Django</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark "
+                                    style="width: 20%;">20%</div>
+                            </div>
+                            <!-- project -->
+                            <hr>
+                            <!-- project -->
+                            <p class="persian">نوشتن وبلاگ شخصی</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-success" style="width: 34%;">34%</div>
+                            </div>
+                            <!-- project -->
+                        </div>
+                    </div>
+                    <!-- end of progress bar -->
+                    <!-- task list -->
+                    <div class="col-lg-6">
+                        <h4 class="text-muted mb-3 mt-5 mt-lg-0 text-center persian">تسک ها</h4>
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+                        <!-- task -->
+                        <div class="container-fluid my-2">
+                            <div class="row bg-light text-dark border-5 border-end border-success rounded py-2">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                </div>
+                                <div class="col-9">
+                                    <span class="persian">نوشتن Api برای وب اپلیکیشن</span>
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="ویرایش">
+                                        <i class="bi bi-pencil-square text-success cursor-pointer"></i>
+                                    </span>
+
+                                </div>
+                                <div class="col-1">
+                                    <span class="text-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="حذف">
+                                        <i class="bi bi-trash3-fill text-danger cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of task -->
+
+
+                    </div>
+                    <!-- end of task list -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of task list / progress-->
+
+
+    <!-- ticket and payment -->
+    <section>
+        <div class="container-fluid mt-3">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 mb-md-lg">
+                            <h3 class="text-muted text-center mb-3 mt-4 mt-lg-0 persian">پرداختی ها</h3>
+                            <table class="table table-dark persian table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>ردیف</th>
+                                        <th>نام</th>
+                                        <th>مبلغ</th>
+                                        <th>تاریخ</th>
+                                        <th>وضعیت</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>علی شریفی</td>
+                                        <td>5 میلیون</td>
+                                        <td>10 مهر</td>
+                                        <td>
+                                            <span class="badge bg-success ">پرداخت شده</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>اکبر محمدی</td>
+                                        <td>5 میلیون</td>
+                                        <td>10 مهر</td>
+                                        <td>
+                                            <span class="badge bg-info ">خطا</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>شیرین قلی</td>
+                                        <td>5 میلیون</td>
+                                        <td>10 مهر</td>
+                                        <td>
+                                            <span class="badge bg-danger ">رد شده</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>ناصر احمد ...</td>
+                                        <td>5 میلیون</td>
+                                        <td>10 مهر</td>
+                                        <td>
+                                            <span class="badge bg-warning ">انتظار </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>علی شریفی</td>
+                                        <td>5 میلیون</td>
+                                        <td>10 مهر</td>
+                                        <td>
+                                            <span class="badge bg-success ">پرداخت شده</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- pagination -->
+                            <ul class="pagination w-100  justify-content-center" dir="ltr">
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-2 px-3">&laquo;</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="" class="page-link px-2 px-3">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">&raquo;</a>
+                                </li>
+                            </ul>
+                            <!-- end of pagination -->
+
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="text-muted text-center mb-3 persian">تیکت های اخیر</h3>
+                            <table class="table table-bordered table-striped persian table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>ردیف</th>
+                                        <th>نام</th>
+                                        <th>تاریخ</th>
+                                        <th>عملیات</th>
+                                        <th>وضعیت</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>علی شریفی</td>
+                                        <td>10 دی</td>
+                                        <td>
+                                            <span class="badge bg-info ">پاسخ</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-success ">پاسخ داده شده</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>شفیع زاده</td>
+                                        <td>10 دی</td>
+                                        <td>
+                                            <span class="badge bg-info ">پاسخ</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-warning ">در انتظار پاسخ</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>شهریاری</td>
+                                        <td>10 دی</td>
+                                        <td>
+                                            <span class="badge bg-info ">پاسخ</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-danger ">رد شده</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>شفیع زاده</td>
+                                        <td>10 دی</td>
+                                        <td>
+                                            <span class="badge bg-info ">پاسخ</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-warning ">در انتظار پاسخ</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>احمد ممانی</td>
+                                        <td>10 دی</td>
+                                        <td>
+                                            <span class="badge bg-info ">پاسخ</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-success ">پاسخ داده شده</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- pagination -->
+                            <ul class="pagination w-100  justify-content-center" dir="ltr">
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-2 px-3">&laquo;</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="" class="page-link px-2 px-3">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link px-2 px-3">&raquo;</a>
+                                </li>
+                            </ul>
+                            <!-- end of pagination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of ticket \ payment -->
+
+
+    <!-- activities and quick post -->
+    <section>
+        <div class="container-fluid persian">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row">
+                        <!-- activities -->
+                        <div class="col-lg-7">
+                            <h4 class="text-muted mt-4 mt-lg-0 mb-4 text-center">فعالیت های اخیر</h4>
+                            <div id="activities_parent">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                            class="btn border-0 bg-light text-right my-0 py-0  ">
+                                            <div class="w-100 d-flex align-items-center">
+                                                <div class="mx-2">
+                                                    <img src="./IMAGES/profile.jpg " class="rounded"
+                                                        style="height :80px; width:80px" alt="">
+                                                </div>
+                                                <div>
+                                                    <span>علی</span>
+                                                    <span>یک گفتگو جدید ایجاد کرد</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapse1" data-bs-parent="#activities_parent">
+                                        <div class="card-body">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore
+                                                sunt quas reiciendis eius, culpa obcaecati nisi sit molestias repellat,
+                                                facilis quidem iusto voluptas quia corporis pariatur saepe consequatur
+                                                quibusdam, eum porro rerum eaque accusantium!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                            class="btn border-0 bg-light text-right my-0 py-0  ">
+                                            <div class="w-100 d-flex align-items-center">
+                                                <div class="mx-2">
+                                                    <img src="./IMAGES/profile.jpg " class="rounded"
+                                                        style="height :80px; width:80px" alt="">
+                                                </div>
+                                                <div>
+                                                    <span>علی</span>
+                                                    <span>یک گفتگو جدید ایجاد کرد</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapse2" data-bs-parent="#activities_parent">
+                                        <div class="card-body">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore
+                                                sunt quas reiciendis eius, culpa obcaecati nisi sit molestias repellat,
+                                                facilis quidem iusto voluptas quia corporis pariatur saepe consequatur
+                                                quibusdam, eum porro rerum eaque accusantium!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                            class="btn border-0 bg-light text-right my-0 py-0  ">
+                                            <div class="w-100 d-flex align-items-center">
+                                                <div class="mx-2">
+                                                    <img src="./IMAGES/profile.jpg " class="rounded"
+                                                        style="height :80px; width:80px" alt="">
+                                                </div>
+                                                <div>
+                                                    <span>علی</span>
+                                                    <span>یک گفتگو جدید ایجاد کرد</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapse3" data-bs-parent="#activities_parent">
+                                        <div class="card-body">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore
+                                                sunt quas reiciendis eius, culpa obcaecati nisi sit molestias repellat,
+                                                facilis quidem iusto voluptas quia corporis pariatur saepe consequatur
+                                                quibusdam, eum porro rerum eaque accusantium!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                            class="btn border-0 bg-light text-right my-0 py-0  ">
+                                            <div class="w-100 d-flex align-items-center">
+                                                <div class="mx-2">
+                                                    <img src="./IMAGES/profile.jpg " class="rounded"
+                                                        style="height :80px; width:80px" alt="">
+                                                </div>
+                                                <div>
+                                                    <span>علی</span>
+                                                    <span>یک گفتگو جدید ایجاد کرد</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapse4" data-bs-parent="#activities_parent">
+                                        <div class="card-body">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore
+                                                sunt quas reiciendis eius, culpa obcaecati nisi sit molestias repellat,
+                                                facilis quidem iusto voluptas quia corporis pariatur saepe consequatur
+                                                quibusdam, eum porro rerum eaque accusantium!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                            class="btn border-0 bg-light text-right my-0 py-0  ">
+                                            <div class="w-100 d-flex align-items-center">
+                                                <div class="mx-2">
+                                                    <img src="./IMAGES/profile.jpg " class="rounded"
+                                                        style="height :80px; width:80px" alt="">
+                                                </div>
+                                                <div>
+                                                    <span>علی</span>
+                                                    <span>یک گفتگو جدید ایجاد کرد</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="collapse5" data-bs-parent="#activities_parent">
+                                        <div class="card-body">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore
+                                                sunt quas reiciendis eius, culpa obcaecati nisi sit molestias repellat,
+                                                facilis quidem iusto voluptas quia corporis pariatur saepe consequatur
+                                                quibusdam, eum porro rerum eaque accusantium!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of quick post -->
+
+                        <!--  quick post -->
+                        <div class="col-lg-5">
+                            <div class="container-fluid mt-5">
+                                <div class="card">
+                                    <h4 class="text-muted text-center py-2 mb-4 mt-3">پست جدید</h4>
+
+                                    <ul class="list-inline p-0 mb-5 d-flex justify-content-center align-items-center">
+                                        <li class="list-inline-item mx-2">
+                                            <a href="" class="text-muted text-decoration-none">
+                                                <i class="bi bi-geo-alt-fill text-success"></i>
+                                                <span>وضعیت</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item mx-2">
+                                            <a href="" class="text-muted text-decoration-none">
+                                                <i class="bi bi-geo-alt-fill text-info"></i>
+                                                <span>تصویر</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item mx-2">
+                                            <a href="" class="text-muted text-decoration-none">
+                                                <i class="bi bi-geo-alt-fill text-danger"></i>
+                                                <span>مکان</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <form action="" class="mx-auto" style="width:95%;">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder=" عنوان پست...">
+                                        </div>
+                                        <input type="submit" value="ارسال"
+                                            class="form-control bg-secondary text-white my-3">
+                                    </form>
+
+                                    <div class="row my-5 mx-3">
+                                        <div class="col-6">
+                                            <div class="card d-flex flex-column justify-content-center align-items-center">
+                                                <div>
+                                                    <i class="bi bi-calendar-minus text-warning"
+                                                        style="font-size: 5rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <span>چهارشنبه 17 خرداد</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card d-flex flex-column justify-content-center align-items-center">
+                                                <div>
+                                                    <i class="bi bi-clock text-warning" style="font-size: 5rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <span>10:25 صبح</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of quick post -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of activities and quick post -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container-fluid persian">
+            <div class="row my-3">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                        <div class="bg-light py-3 d-flex justify-content-around align-items-center">
+                            <div>
+                                <a href="" class="text-muted text-decoration-none mx-2">درباره ما</a>
+                                <a href="" class="text-muted text-decoration-none mx-2">پشتیبانی</a>
+                                <a href="" class="text-muted text-decoration-none mx-2">وبلاگ</a>
+                            </div>
+                            <div>
+                                <span>ساخته شده با <span class="text-danger fs-4 p-0 m-0">&hearts; </span> توسط علی شریفی</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+  <!-- Modal exit -->
+    <div class="modal fade" id="exit">
+        <div class="modal-dialog persian">
+            <div class="modal-content">
+                <div class="modal-header">آیا میخواهید خارج شوید</div>
+                <div class="modal-body text-center">
+                    <span class="text-muted ">در صورت خروج برای دسترسی به پنل باید مجدد با نام کاربری و گذرواژه وارد
+                        حساب کاربری خود شوید</span>
+                </div>
+                <div class="modal-footer">
+                    <a role="button" class="btn btn-success" data-bs-dismiss="modal">می مانم</a>
+                    <a href="/logout" class="btn btn-danger">خارج می شوم</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ENd of Modal exit -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./Boostrap/jquery-3.6.1.slim.min.js"></script> -->
+    <!-- <script src="./Boostrap/popper.min.js"></script> -->
+    <!-- <script src="./Boostrap/bootstrap.bundle.min.js"></script> -->
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+/html>
+    
+    <!--
+    shout out TO Neon Learn
+    -->
