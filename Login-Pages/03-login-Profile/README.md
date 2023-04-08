@@ -1,6 +1,6 @@
    
 # Login Profile  [Flex-Box]
-## a responsive log in Page
+## a responsive login Page
 
 
 ![Gif](https://github.com/alisharifyy/Html-Page/blob/main/login-Profile/img/PhotoGIF_5_31_2022_12_13_25_PM.gif)
