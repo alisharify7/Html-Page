@@ -1,3 +1,9 @@
+<p>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alisharify7/Html-Page">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alisharify7/Html-Page">
+</p>
+
+
 # implementation of Some Html Page's
 ## All sample pages that are available in this repository are inspired and made from popular sites
 
