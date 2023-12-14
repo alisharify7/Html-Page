@@ -33,8 +33,8 @@ ___
   </a>
 
 ### 06 login-page
-  <a href="https://github.com/alisharifyy/Html-Page/tree/main/Login-Pages/06-login-page"> 
-  <img src="https://github.com/alisharifyy/Html-Page/blob/main/Login-Pages/05-login-page/media/demo.png" width="100%" >
+  <a href="https://github.com/alisharify7/Html-Page/tree/main/Login-Pages/06-login-page"> 
+  <img src="https://github.com/alisharify7/Html-Page/blob/main/Login-Pages/06-login-page/media/demo.png" width="100%" >
   </a>
 
 
